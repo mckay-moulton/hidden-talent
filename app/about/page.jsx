@@ -3,6 +3,7 @@
 import gsap from "gsap";
 import _ScrollTrigger from "gsap/ScrollTrigger";
 import { useEffect } from "react";
+import Quote from "../Quote";
 
 export default function AboutPage() {
   useEffect(() => {
@@ -285,6 +286,17 @@ export default function AboutPage() {
       y: 0,
       opacity: 1,
     })
+    gsap.from('#personality-mobile', {
+      scrollTrigger: '#personality-mobile',
+      opacity: 0,
+      y: 200,
+      duration: 0.35,
+    })
+    gsap.to('#personality-mobile', {
+      scrollTrigger: '#personality-mobile',
+      y: 0,
+      opacity: 1,
+    })
     gsap.from('#meet-abel-2', {
       scrollTrigger: '#meet-abel-2',
       opacity: 0,
@@ -293,6 +305,17 @@ export default function AboutPage() {
     })
     gsap.to('#meet-abel-2', {
       scrollTrigger: '#meet-abel-2',
+      y: 0,
+      opacity: 1,
+    })
+    gsap.from('#meet-abel-3', {
+      scrollTrigger: '#meet-abel-3',
+      opacity: 0,
+      y: 200,
+      duration: 0.35,
+    })
+    gsap.to('#meet-abel-3', {
+      scrollTrigger: '#meet-abel-3',
       y: 0,
       opacity: 1,
     })
@@ -548,7 +571,7 @@ export default function AboutPage() {
               }}
             >
               <h3 className="text-2xl text-center">Things I'm <span className="underline">Proud</span> of</h3>
-              <p className="flex flex-col items-center gap-2 w-fit mx-auto justify-center text-center max-w-[30ch]"><img src="award.svg" alt="" width="24" />Avid CUPA-HR Western Regional HR Excellence Award</p>
+              <p className="flex flex-col items-center gap-2 w-fit mx-auto justify-center text-center max-w-[30ch]"><img src="award.svg" alt="" width="24" />CUPA-HR Western Regional HR Excellence Award</p>
               <p className="flex flex-col items-center gap-2 w-fit mx-auto text-center justify-center"><img src="award.svg" alt="" width="24" />CUPA-HR National HR Excellence Award</p>
               <p className="flex flex-col items-center gap-2 w-fit mx-auto text-center"><img src="award.svg" alt="" width="24" />Guest keynote speaker at 2019 NAEOP</p>
             </div>
@@ -652,6 +675,40 @@ export default function AboutPage() {
                 </div> */}
               </div>
             </div>
+            {/* personality type */}
+            <div id="personality-mobile">
+              <div 
+                className="bg-hidden-teal p-6 py-12 pb-24 text-white text-center grid gap-8 rounded-[20px_20px_0_0]"
+                style={{
+                  clipPath: 'polygon(0% 0%, 100% 0%, 100% calc(100% - 25px), 0% 100%)'
+                }}
+              >
+                <div className="flex flex-col gap-2">
+                  <h3 className="text-2xl">Personality Type</h3>
+                  <p>
+                    Protagonist: an inspiring optimist readily taking action to do what is right.
+                  </p>
+                </div>
+                <div className="flex flex-col gap-2">
+                  <h3 className="text-2xl">Gallup Strengths Finder</h3>
+                  <ul className="list-disc grid grid-cols-[auto_auto] gap-x-8 mx-auto text-left w-fit">
+                    <li>Restorative</li>
+                    <li>Woo</li>
+                    <li>Focus</li>
+                    <li>Achiever</li>
+                    <li>Positivity</li>
+                  </ul>
+                </div>
+              </div>
+              <img 
+                src="https://media.hirehiddentalent.com/images/about-page-images/johnson-family-mobile"
+                alt=""
+                style={{
+                  clipPath: 'polygon(0% 25px, 100% 0%, 100% 100%, 0% 100%)',
+                  borderRadius: '0 0 20px 20px'
+                }}
+              />
+            </div>
           </div>
           <div id="meet-abel-2" className="grid-cols-[5_7.8fr] py-16 items-center max-w-7xl mx-auto hidden lg:flex">
             {/* talents */}
@@ -739,7 +796,7 @@ export default function AboutPage() {
                   }}
                 >
                   <h3 className="text-center">Things I'm <span className="underline">Proud</span> of</h3>
-                  <p className="flex gap-2 text-base pl-4"><img src="award.svg" alt="" width="32" /> Avid CUPA-HR Western Regional HR Excellence Award</p>
+                  <p className="flex gap-2 text-base pl-4"><img src="award.svg" alt="" width="32" /> CUPA-HR Western Regional HR Excellence Award</p>
                   <p className="flex gap-2 text-base pl-8"><img src="award.svg" alt="" width="32" /> CUPA-HR National HR Excellence Award</p>
                   <p className="flex gap-2 text-base pl-12"><img src="award.svg" alt="" width="32" /> Guest keynote speaker at 2019 NAEOP</p>
                 </div>
@@ -781,8 +838,48 @@ export default function AboutPage() {
               </div>
             </div>
           </div>
+          <div id="meet-abel-3" className="hidden lg:grid lg:grid-cols-[39%_auto] pl-[75px] lg:max-w-7xl mx-auto">
+            <div 
+              className="bg-hidden-teal text-white px-16 pr-32 text-center flex flex-col items-center justify-center gap-8"
+              style={{
+                clipPath: 'polygon(0% 0%, calc(100% - 100px) 0%, 100% 100%, 0% 100%)',
+                borderRadius: '20px 0 0 20px',
+              }}
+            >
+              <div className="flex flex-col gap-2 text-base">
+                <h3 className="text-lg">Personality Type</h3>
+                <p className="max-w-[20ch]">
+                  Protagonist: an inspiring optimist readily taking action to do what is right.
+                </p>
+              </div>
+              <div className="flex flex-col gap-2 text-base">
+                <h3 className="text-lg">Gallup Strengths Finder</h3>
+                <ul className="grid grid-cols-2 gap-x-12 text-left list-disc w-fit mx-auto">
+                  <li>Restorative</li>
+                  <li>Woo</li>
+                  <li>Focus</li>
+                  <li>Achiever</li>
+                  <li>Positivity</li>
+                </ul>
+              </div>
+            </div>
+            <img 
+              src="https://media.hirehiddentalent.com/images/about-page-images/johnson-family"
+              alt=""
+              style={{
+                // height: '100%',
+                width: 'auto',
+                clipPath: 'polygon(25px 0%, 100% 0%, 100% 100%, 125px 100%)',
+                marginLeft: '-75px'
+              }}
+            />
+          </div>
         </div>
       </section>
+      <Quote 
+        quote="“Nothing we do is more important than hiring and developing people. At the end of the day, you bet on people, not strategies.”"
+        author="Lawrence Bossidy, Former CEO of AlliedSignal"
+      />
     </main>
   )
 }

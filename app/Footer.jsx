@@ -38,14 +38,6 @@ export default function Footer() {
             alt="Linkedin"
           />
         </Link>
-        <Link href="#">
-          <img 
-            src="/icon_Youtube.svg"
-            width="36"
-            height="36"
-            alt="Youtube"
-          />
-        </Link>
       </div>
       <p>&copy; 2023 Hidden Talent</p>
       <p>Created by <Link href="https://www.varial.dev" className="text-hidden-teal-dark">Varial Web Development</Link></p>
