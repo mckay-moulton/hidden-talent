@@ -1,6 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
+import ContactForm from "./ContactForm"
 
 export default function HomeFormSection() {
   return (
@@ -14,7 +15,8 @@ export default function HomeFormSection() {
         transition={{ duration: 0.35 }}
         className="max-h-[1300px]"
       />
-      <motion.form
+      <ContactForm />
+      {/* <motion.form
         initial={{ opacity: 0, y: 200 }} 
         whileInView={{ opacity: 1, y: 0 }} 
         viewport={{ once: true }} 
@@ -87,7 +89,7 @@ export default function HomeFormSection() {
         <button className="md:text-xl mt-4 bg-gradient-to-b from-[#11B0AC] to-[#03D8D4] hover:from-[#03D8D4] hover:to-[hsl(179,97%,46%)] text-center rounded-full py-5 uppercase font-semibold text-lg  text-[#0a0a0a]">
           Start your search
         </button>
-      </motion.form>
+      </motion.form> */}
     </section>
   )
 }

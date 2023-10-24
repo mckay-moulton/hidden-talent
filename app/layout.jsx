@@ -1,3 +1,4 @@
+import BackToTop from './BackToTop'
 import Footer from './Footer'
 import Nav from './Nav'
 import './globals.css'
@@ -21,7 +22,8 @@ export default function RootLayout({ children }) {
         <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@500;600&display=swap" rel="stylesheet" />
       </head>
       <body className='max-w-[100vw]'>
-        <div className='grid grid-rows-[auto_1fr_auto] min-h-screen w-screen'>
+        <div className='grid grid-rows-[auto_1fr_auto] min-h-screen w-screen relative'>
+          <BackToTop className="absolute bottom-0 right-0" />
           <Nav />
           {children}
           <Footer />
