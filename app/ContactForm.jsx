@@ -118,12 +118,12 @@ export default function ContactForm() {
           <option value="positions">I am seeking positions</option>
         </select>
       </label>
-      <label htmlFor="details" className="grid gap-2 md:text-xl text-[#0a0a0a]">
+      <label htmlFor="details" className="grid gap-2 md:text-xl">
         Inquiry Details
         <textarea
           id="details"
           name="details"
-          className="rounded p-2 md:p-4 md:text-xl"
+          className="rounded p-2 md:p-4 md:text-xl text-[#0a0a0a]"
           rows="4"
         >
         </textarea>
