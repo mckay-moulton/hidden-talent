@@ -45,145 +45,12 @@ export default function ServicesSection() {
       <motion.img src="up-arrows.svg" alt="" width="128" className="w-[5vw] hidden lg:block relative top-[10%]" initial={{ opacity: 0, y: 200 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.35 }} />
       <section className="px-4 py-12 lg:py-16 grid gap-8 lg:gap-24 lg:grid-cols-[1fr_auto_1fr] max-w-[100ch] mx-auto">
         <div className="flex flex-col gap-4 lg:col-span-3">
-          <motion.h2 initial={{ opacity: 0, y: 200 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.35 }} id="services-h2" className="text-3xl text-center">Services That <span className="text-hidden-teal">Inspire</span></motion.h2>
+          <motion.h2 initial={{ opacity: 0, y: 200 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.35 }} id="services-h2" className="text-[29px] lg:text-[42px] text-center">Services That <span className="text-hidden-teal">Inspire</span></motion.h2>
           <motion.p initial={{ opacity: 0, y: 200 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.35 }} id="services-intro" className="max-w-[90ch] self-center">
             At Hidden Talent, we believe that recruiting should empower employers and employees alike. 
             That's why we provide services, tools, and resources for both sides of the process so each of you can find the match that is right for you.
           </motion.p>
         </div>
-        {/* <div className="flex flex-col gap-12 items-center"> */}
-        <div className="grid grid-rows-[auto_1fr_1fr_1fr_1fr_auto] gap-12 justify-center justify-items-center">
-          <motion.h3 
-            initial={{ opacity: 0, y: 200 }} 
-            whileInView={{ opacity: 1, y: 0 }} 
-            viewport={{ once: true }} 
-            transition={{ duration: 0.35 }} 
-            className="text-2xl text-center p-4 border-2 border-hidden-teal rounded-[20px] w-full lg:w-fit lg:px-24"
-          >
-            Develop Your <span className="text-hidden-teal">Talent</span>
-          </motion.h3>
-          <div className="flex flex-col gap-2 items-center">
-            <motion.img 
-              initial={{ opacity: 0, y: 200 }} 
-              whileInView={{ opacity: 1, y: 0 }} 
-              viewport={{ once: true }} 
-              transition={{ duration: 0.35 }} 
-              src="resume.svg" height="60" 
-            />
-            <motion.h4 
-              initial={{ opacity: 0, y: 200 }} 
-              whileInView={{ opacity: 1, y: 0 }} 
-              viewport={{ once: true }} 
-              transition={{ duration: 0.35 }} 
-              className="text-xl mt-4"
-            >  
-              Resume Building
-            </motion.h4>
-            <motion.p 
-              initial={{ opacity: 0, y: 200 }} 
-              whileInView={{ opacity: 1, y: 0 }} 
-              viewport={{ once: true }} 
-              transition={{ duration: 0.35 }} 
-              className="text-center max-w-[25ch]"
-            >
-              You've already got all the pieces to an amazing picture of talent and passion. You just need the expertise to put it all together in a way that showcases your skills.
-            </motion.p>
-          </div>
-          <div className="flex flex-col gap-2 items-center">
-            <motion.img 
-              initial={{ opacity: 0, y: 200 }} 
-              whileInView={{ opacity: 1, y: 0 }} 
-              viewport={{ once: true }} 
-              transition={{ duration: 0.35 }} 
-              src="digital-networking.svg" height="60" 
-            />
-            <motion.h4 
-              initial={{ opacity: 0, y: 200 }} 
-              whileInView={{ opacity: 1, y: 0 }} 
-              viewport={{ once: true }} 
-              transition={{ duration: 0.35 }} 
-              className="text-xl mt-4"
-            >  
-              Digital Networking
-            </motion.h4>
-            <motion.p 
-              initial={{ opacity: 0, y: 200 }} 
-              whileInView={{ opacity: 1, y: 0 }} 
-              viewport={{ once: true }} 
-              transition={{ duration: 0.35 }} 
-              className="text-center max-w-[25ch]"
-            >
-              Many of our professional relationships are developed in the digital world. Our experience can help you get linked up online to build the right connections.
-            </motion.p>
-          </div>
-          <div className="flex flex-col gap-2 items-center">
-            <motion.img 
-              initial={{ opacity: 0, y: 200 }} 
-              whileInView={{ opacity: 1, y: 0 }} 
-              viewport={{ once: true }} 
-              transition={{ duration: 0.35 }} 
-              src="interview-tactics.svg" height="60" 
-            />
-            <motion.h4 
-              initial={{ opacity: 0, y: 200 }} 
-              whileInView={{ opacity: 1, y: 0 }} 
-              viewport={{ once: true }} 
-              transition={{ duration: 0.35 }} 
-              className="text-xl mt-4"
-            >  
-              Interviewing Tactics
-            </motion.h4>
-            <motion.p 
-              initial={{ opacity: 0, y: 200 }} 
-              whileInView={{ opacity: 1, y: 0 }} 
-              viewport={{ once: true }} 
-              transition={{ duration: 0.35 }} 
-              className="text-center max-w-[25ch]"
-            >
-              With our insight and guidance, you will better understand how to make any interview work to your advantage. You'll never sweat through your suit again.
-            </motion.p>
-          </div>
-          <div className="flex flex-col gap-2 items-center">
-            <motion.img 
-              initial={{ opacity: 0, y: 200 }} 
-              whileInView={{ opacity: 1, y: 0 }} 
-              viewport={{ once: true }} 
-              transition={{ duration: 0.35 }} 
-              src="job-offer-counsel.svg" height="60" 
-            />
-            <motion.h4 
-              initial={{ opacity: 0, y: 200 }} 
-              whileInView={{ opacity: 1, y: 0 }} 
-              viewport={{ once: true }} 
-              transition={{ duration: 0.35 }} 
-              className="text-xl mt-4"
-            >  
-              Job Offer Counsel
-            </motion.h4>
-            <motion.p 
-              initial={{ opacity: 0, y: 200 }} 
-              whileInView={{ opacity: 1, y: 0 }} 
-              viewport={{ once: true }} 
-              transition={{ duration: 0.35 }} 
-              className="text-center max-w-[25ch]"
-            >
-              After rounds of interviewing, it's exciting to finally get the call. We can help you navigate your job offer so you get everything you're looking for in your new position. 
-            </motion.p>
-          </div>
-          <motion.div
-            initial={{ opacity: 0, y: 200 }} 
-            whileInView={{ opacity: 1, y: 0 }} 
-            viewport={{ once: true }} 
-            transition={{ duration: 0.35 }} 
-          >
-            <Link href="#" className="bg-gradient-to-b from-[#11B0AC] to-[#03D8D4] hover:from-[#03D8D4] hover:to-[hsl(179,97%,46%)] text-center rounded-full py-5 uppercase font-semibold text-lg text-white w-full px-16 lg:w-fit lg:px-16 lg:self-center">Learn more</Link>
-          </motion.div>
-        </div>
-        <svg width="2" height="2100" className="hidden lg:block">
-          <line x1="0" y1="0" x2="0" y2="2100" style={{ stroke: '#03D8D4', strokeWidth: '4px' }} />
-        </svg>
-        <hr className="lg:hidden text-hidden-teal my-12" />
-        {/* <div className="flex flex-col gap-12 items-center"> */}
         <div className="grid grid-rows-[auto_1fr_1fr_1fr_1fr_auto] gap-12 justify-center justify-items-center">
           <motion.h3 
             initial={{ opacity: 0, y: 200 }} 
@@ -308,7 +175,139 @@ export default function ServicesSection() {
             viewport={{ once: true }} 
             transition={{ duration: 0.35 }} 
           >
-            <Link href="#" className="bg-gradient-to-b from-[#11B0AC] to-[#03D8D4] hover:from-[#03D8D4] hover:to-[hsl(179,97%,46%)] text-center rounded-full py-5 uppercase font-semibold text-lg text-white w-full px-16 lg:w-fit lg:px-16 lg:self-center">Learn more</Link>
+            <Link href="/employers" className="bg-gradient-to-b from-[#11B0AC] to-[#03D8D4] hover:from-[#ffffff] hover:to-[#ffffff] hover:text-hidden-teal border border-[#fff] hover:border-hidden-teal text-center rounded-full py-5 uppercase font-semibold text-lg text-white px-12 w-full md:w-fit mx-auto">Learn more</Link>
+          </motion.div>
+        </div>
+        
+        <svg width="2" height="2100" className="hidden lg:block">
+          <line x1="0" y1="0" x2="0" y2="2100" style={{ stroke: '#03D8D4', strokeWidth: '4px' }} />
+        </svg>
+        <hr className="lg:hidden text-hidden-teal my-12" />
+        <div className="grid grid-rows-[auto_1fr_1fr_1fr_1fr_auto] gap-12 justify-center justify-items-center">
+          <motion.h3 
+            initial={{ opacity: 0, y: 200 }} 
+            whileInView={{ opacity: 1, y: 0 }} 
+            viewport={{ once: true }} 
+            transition={{ duration: 0.35 }} 
+            className="text-2xl text-center p-4 border-2 border-hidden-teal rounded-[20px] w-full lg:w-fit lg:px-24"
+          >
+            Develop Your <span className="text-hidden-teal">Talent</span>
+          </motion.h3>
+          <div className="flex flex-col gap-2 items-center">
+            <motion.img 
+              initial={{ opacity: 0, y: 200 }} 
+              whileInView={{ opacity: 1, y: 0 }} 
+              viewport={{ once: true }} 
+              transition={{ duration: 0.35 }} 
+              src="resume.svg" height="60" 
+            />
+            <motion.h4 
+              initial={{ opacity: 0, y: 200 }} 
+              whileInView={{ opacity: 1, y: 0 }} 
+              viewport={{ once: true }} 
+              transition={{ duration: 0.35 }} 
+              className="text-xl mt-4"
+            >  
+              Resume Building
+            </motion.h4>
+            <motion.p 
+              initial={{ opacity: 0, y: 200 }} 
+              whileInView={{ opacity: 1, y: 0 }} 
+              viewport={{ once: true }} 
+              transition={{ duration: 0.35 }} 
+              className="text-center max-w-[25ch]"
+            >
+              You've already got all the pieces to an amazing picture of talent and passion. You just need the expertise to put it all together in a way that showcases your skills.
+            </motion.p>
+          </div>
+          <div className="flex flex-col gap-2 items-center">
+            <motion.img 
+              initial={{ opacity: 0, y: 200 }} 
+              whileInView={{ opacity: 1, y: 0 }} 
+              viewport={{ once: true }} 
+              transition={{ duration: 0.35 }} 
+              src="digital-networking.svg" height="60" 
+            />
+            <motion.h4 
+              initial={{ opacity: 0, y: 200 }} 
+              whileInView={{ opacity: 1, y: 0 }} 
+              viewport={{ once: true }} 
+              transition={{ duration: 0.35 }} 
+              className="text-xl mt-4"
+            >  
+              Digital Networking
+            </motion.h4>
+            <motion.p 
+              initial={{ opacity: 0, y: 200 }} 
+              whileInView={{ opacity: 1, y: 0 }} 
+              viewport={{ once: true }} 
+              transition={{ duration: 0.35 }} 
+              className="text-center max-w-[25ch]"
+            >
+              Many of our professional relationships are developed in the digital world. Our experience can help you get linked up online to build the right connections.
+            </motion.p>
+          </div>
+          <div className="flex flex-col gap-2 items-center">
+            <motion.img 
+              initial={{ opacity: 0, y: 200 }} 
+              whileInView={{ opacity: 1, y: 0 }} 
+              viewport={{ once: true }} 
+              transition={{ duration: 0.35 }} 
+              src="interview-tactics.svg" height="60" 
+            />
+            <motion.h4 
+              initial={{ opacity: 0, y: 200 }} 
+              whileInView={{ opacity: 1, y: 0 }} 
+              viewport={{ once: true }} 
+              transition={{ duration: 0.35 }} 
+              className="text-xl mt-4"
+            >  
+              Interviewing Tactics
+            </motion.h4>
+            <motion.p 
+              initial={{ opacity: 0, y: 200 }} 
+              whileInView={{ opacity: 1, y: 0 }} 
+              viewport={{ once: true }} 
+              transition={{ duration: 0.35 }} 
+              className="text-center max-w-[25ch]"
+            >
+              With our insight and guidance, you will better understand how to make any interview work to your advantage. You'll never sweat through your suit again.
+            </motion.p>
+          </div>
+          <div className="flex flex-col gap-2 items-center">
+            <motion.img 
+              initial={{ opacity: 0, y: 200 }} 
+              whileInView={{ opacity: 1, y: 0 }} 
+              viewport={{ once: true }} 
+              transition={{ duration: 0.35 }} 
+              src="job-offer-counsel.svg" height="60" 
+            />
+            <motion.h4 
+              initial={{ opacity: 0, y: 200 }} 
+              whileInView={{ opacity: 1, y: 0 }} 
+              viewport={{ once: true }} 
+              transition={{ duration: 0.35 }} 
+              className="text-xl mt-4"
+            >  
+              Job Offer Counsel
+            </motion.h4>
+            <motion.p 
+              initial={{ opacity: 0, y: 200 }} 
+              whileInView={{ opacity: 1, y: 0 }} 
+              viewport={{ once: true }} 
+              transition={{ duration: 0.35 }} 
+              className="text-center max-w-[25ch]"
+            >
+              After rounds of interviewing, it's exciting to finally get the call. We can help you navigate your job offer so you get everything you're looking for in your new position. 
+            </motion.p>
+          </div>
+          <motion.div
+            initial={{ opacity: 0, y: 200 }} 
+            whileInView={{ opacity: 1, y: 0 }} 
+            viewport={{ once: true }} 
+            transition={{ duration: 0.35 }} 
+          >
+            <Link href="/job-seekers" className="bg-gradient-to-b from-[#11B0AC] to-[#03D8D4] hover:from-[#ffffff] hover:to-[#ffffff] hover:text-hidden-teal border border-[#fff] hover:border-hidden-teal text-center rounded-full py-5 uppercase font-semibold text-lg text-white px-12 w-full md:w-fit mx-auto">Learn more</Link>
           </motion.div>
         </div>
       </section>

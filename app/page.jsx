@@ -1,4 +1,3 @@
-import HeroSection from './Hero'
 import IntroSection from './Intro'
 import AboutSection from './AboutUs'
 import ServicesSection from './Services'
@@ -6,6 +5,7 @@ import UniqueSection from './Unique'
 import TestimonialSection from './Testimonials'
 import Quote from './Quote'
 import HomeFormSection from './HomeForm'
+import HeroSection from './Hero'
 
 export const metadata = {
   title: 'Creating a better world of recruiting'
@@ -14,15 +14,9 @@ export const metadata = {
 export default function HomePage() {
   return (
     <main>
-      {/* hero section */}
-      <section className='px-4 py-8  max-w-[100vw] w-[100vw] lg:py-16 lg:px-16'>
-        <HeroSection />
-      </section>
-      {/* intro section */}
+      <HeroSection />
       <IntroSection />
-      <section className="px-4 py-8  max-w-[100vw] w-[100vw] lg:py-16 lg:px-16">
-        <AboutSection />
-      </section>
+      <AboutSection />
       <ServicesSection />
       <UniqueSection />
       <TestimonialSection />

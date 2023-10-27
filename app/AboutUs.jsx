@@ -24,18 +24,32 @@ export default function AboutSection() {
   }, [])
 
   return (
-    <div id="about-section" className="bg-[#0A0A0A] text-white rounded-[50px] px-4 py-6 md:px-8 md:py-12 flex flex-col gap-8 md:gap-14 lg:flex-row w-fit lg:max-w-[1453px] mx-auto relative lg:pl-[30vw] lg:px-[8vw] lg:py-[5vw]">
-      <img src="https://media.hirehiddentalent.com/images/homepage-images/abel-home?w=750" className="w-[120%] max-w-[100vw] relative -left-[9.5%] md:w-full md:left-auto lg:absolute lg:w-2/5 lg:order-1 lg:left-12 lg:-top-10" />
-         <div className="hidden lg:block lg:order-1 lg:w-full"></div>
-         <div className="flex flex-col gap-8 lg:order-2">
-           <p>
-             It's not work if you love what you do, and we love to connect businesses and professionals to create a seamless career match. 
-             Our passion stems from observing years of ghosted candidates, endless interviews, quick turnover, and unfilled positions even at the most desirable companies. 
-             With decades of experience, we are breaking the mold in human resources by approaching recruiting with total transparency and the highest level of care from 
-             start to finish. Whether you're looking for your next candidate or career, Hidden Talent is equipped with the tools and services to find a job fit that's made to last.
-           </p>
-           <Link href="/about" className="bg-gradient-to-b from-[#11B0AC] to-[#03D8D4] hover:from-[#03D8D4] hover:to-[hsl(179,97%,46%)] text-center rounded-full py-5 uppercase font-semibold text-lg text-[#0a0a0a] lg:w-fit lg:px-16 lg:self-center">Hear our story</Link>
-         </div>
-    </div>
+    <section className="px-4 py-8 md:py-16 max-w-[100vw] w-[100vw] lg:py-16 lg:px-16">
+      <div 
+        id="about-section"
+        className="grid lg:grid-cols-2 gap-20 md:gap-24 lg:gap-0 items-center bg-[#0a0a0a] text-white rounded-[50px] px-6 py-6 lg:py-12 lg:px-32 md:max-w-2xl lg:max-w-6xl 2xl:max-w-[1400px] mx-auto"
+      >
+        <img 
+          src="https://media.hirehiddentalent.com/images/homepage-images/abel-home" 
+          alt="Abel" 
+          width="350" 
+          className="w-full scale-[120%] lg:w-3/4 lg:scale-[140%]"
+        />
+        <div className="flex flex-col gap-6 md:gap-10">
+          <p className="text-justify">
+            It's not work if you love what you do, and we love to connect businesses and professionals to create a seamless career match. 
+            Our passion stems from observing years of ghosted candidates, endless interviews, quick turnover, and unfilled positions even at the most desirable companies. 
+            With decades of experience, we are breaking the mold in human resources by approaching recruiting with total transparency and the highest level of care from 
+            start to finish. Whether you're looking for your next candidate or career, Hidden Talent is equipped with the tools and services to find a job fit that's made to last.
+          </p>
+          <Link 
+            href="/about" 
+            className="bg-gradient-to-b from-[#11B0AC] to-[#03D8D4] hover:from-[#ffffff] hover:to-[#ffffff] hover:text-hidden-teal border border-[#0a0a0a] hover:border-hidden-teal text-center rounded-full py-5 uppercase font-semibold text-lg text-white px-12 w-full md:w-fit mx-auto"
+          >
+            Hear our story
+          </Link>
+        </div>
+      </div>
+    </section>
   )
 }

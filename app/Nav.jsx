@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -8,9 +8,34 @@ import { usePathname } from 'next/navigation'
 
 export default function Nav() {
   const [open, setOpen] = useState(false)
+  const [scrollY, setScrollY] = useState(0)
+
+  useEffect(() => {
+    setScrollY(window.scrollY)
+
+    const navbar = document.querySelector('#navbar')
+
+    document.addEventListener('scroll', event => {
+      if (window.scrollY < scrollY) {
+        navbar.style.position = "sticky"
+        navbar.style.boxShadow = "0 1px 2px 0 #0a0a0a33"
+      } else {
+        navbar.style.position = "static"
+        navbar.style.boxShadow = "0 0 0 0 #0a0a0a33"
+        setOpen(false)
+      }
+
+      if (window.scrollY === 0) {
+        navbar.style.display = 'static'
+        navbar.style.boxShadow = "0 0 0 0 #0a0a0a33"
+      }
+      
+      setScrollY(window.scrollY)
+    })
+  }, [scrollY])
 
   return (
-    <nav className="px-4 py-8 md:px-8 md:py-12 lg:px-16 lg:py-6 flex justify-between items-center bg-white">
+    <nav id="navbar" className="px-4 py-8 md:px-8 md:py-12 lg:px-16 lg:py-6 flex justify-between items-center bg-white font-['Prompt'] tracking-[0.0125em] top-0 left-0 z-50">
       <Link href="/">
         <img
           src="/hidden-talent-logo-full-width.png"
