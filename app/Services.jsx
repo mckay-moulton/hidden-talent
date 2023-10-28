@@ -46,7 +46,7 @@ export default function ServicesSection() {
       <section className="px-4 py-12 lg:py-16 grid gap-8 lg:gap-24 lg:grid-cols-[1fr_auto_1fr] max-w-[100ch] mx-auto">
         <div className="flex flex-col gap-4 lg:col-span-3">
           <motion.h2 initial={{ opacity: 0, y: 200 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.35 }} id="services-h2" className="text-[29px] lg:text-[42px] text-center">Services That <span className="text-hidden-teal">Inspire</span></motion.h2>
-          <motion.p initial={{ opacity: 0, y: 200 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.35 }} id="services-intro" className="max-w-[90ch] self-center">
+          <motion.p initial={{ opacity: 0, y: 200 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.35 }} id="services-intro" className="max-w-[90ch] self-center text-center">
             At Hidden Talent, we believe that recruiting should empower employers and employees alike. 
             That's why we provide services, tools, and resources for both sides of the process so each of you can find the match that is right for you.
           </motion.p>

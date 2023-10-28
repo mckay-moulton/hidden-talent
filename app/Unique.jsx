@@ -33,7 +33,7 @@ export default function UniqueSection() {
           <img src="https://media.hirehiddentalent.com/images/homepage-images/unique-section-image" alt="" width="350" className="relative scale-[120%] lg:scale-[175%]" />
         </picture>
         <div className="grid gap-4 lg:w-3/5">
-          <h2 className="text-3xl text-center">How We're <span className="text-hidden-teal">Unique</span></h2>
+          <h2 className="text-[29px] md:text-[42px] text-center">How We're <span className="text-hidden-teal">Unique</span></h2>
           <p>
             When you partner with Hidden Talent for your search, you can expect more than just a recruitment agency. We become an extension of your business by offering a full cycle recruiting process that is organized, timely, and creative. We truly care about each of our clients and new hires alike and are committed to their continued success. We document every step of the hiring process so you can start day one with a fully downloadable personnel file, and check in with you and your newest recruit even after they start to make sure everything is going well. 
           </p>

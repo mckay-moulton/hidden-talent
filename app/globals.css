@@ -20,13 +20,28 @@ body, html {
   overflow-x: clip;
 }
 
-input, select {
+input, select, textarea {
   color: #0a0a0a;
+  padding: 10px;
+  border-radius: 6px;
+  width: 100%;
+}
+
+label, input, select, textarea {
+  display: block;
+}
+
+legend, label {
+  font-family: 'Prompt', 'Oxygen', sans-serif;
 }
 
 @media (min-width: 768px) {
   body {
     font-size: 18px;
+  }
+
+  input, select, textarea {
+    padding: 16px;
   }
 }
 

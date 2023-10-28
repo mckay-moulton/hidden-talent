@@ -36,6 +36,7 @@ export default function AboutSection() {
           className="w-full scale-[120%] lg:w-3/4 lg:scale-[140%]"
         />
         <div className="flex flex-col gap-6 md:gap-10">
+          <h2 className="text-[29px] md:text-[42px] text-center">Your Guide to <span className="text-hidden-teal-dark">Greatness</span></h2>
           <p className="text-justify">
             It's not work if you love what you do, and we love to connect businesses and professionals to create a seamless career match. 
             Our passion stems from observing years of ghosted candidates, endless interviews, quick turnover, and unfilled positions even at the most desirable companies. 

@@ -12,7 +12,7 @@ export default function Quote({ quote = "", author = "" }) {
       whileInView={{ opacity: 1, y: 0 }} 
       viewport={{ once: true }} 
       transition={{ duration: 0.35 }} 
-      className="relative bg-gradient-to-r from-[#13A2B2] to-[#11B0AC] text-white p-4 lg:px-8 lg:pr-12 overflow-hidden w-screen"
+      className="relative bg-gradient-to-r from-[#13A2B2] to-[#11B0AC] text-white p-4 lg:p-8 lg:pr-12 overflow-hidden w-screen"
     >
       <img src="/diagonal-up-right-arrow.svg" alt="" className="absolute -top-4 -left-4 w-2/5 lg:w-[12vw]" width="128" />
       <img src="/diagonal-down-left-arrow.svg" alt="" className="absolute -bottom-4 -right-4 w-2/5 lg:w-[12vw] lg:-bottom-4" width="128" />

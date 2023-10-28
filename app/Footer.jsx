@@ -14,7 +14,7 @@ export default function Footer() {
       </Link>
       <p>We are proudly a family owned, minority-owned, faith-based business.</p>
       <div className="flex justify-center gap-4">
-        <Link href="#">
+        <Link href="https://www.facebook.com/profile.php?id=61551467866738">
           <img 
             src="/icon_facebook.svg"
             width="36"
@@ -22,7 +22,7 @@ export default function Footer() {
             alt="Facebook"
           />
         </Link>
-        <Link href="#">
+        <Link href="https://www.instagram.com/hire_hidden_talent">
           <img 
             src="/icon_instagram.svg"
             width="36"
@@ -30,7 +30,7 @@ export default function Footer() {
             alt="Instagram"
           />
         </Link>
-        <Link href="#">
+        <Link href="https://www.linkedin.com/company/hire-hidden-talent/about/">
           <img 
             src="/icon_linkedin.svg"
             width="36"
