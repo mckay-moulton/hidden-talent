@@ -324,27 +324,27 @@ export default function AboutPage() {
 
   return (
     <main>
-      <section className="px-4 py-16 max-w-[100vw] w-[100vw] md:px-6 lg:py-24 lg:px-8 bg-gradient-to-r from-[#11B0AC] to-[#13A2B2] grid lg:grid-cols-[1fr_3fr_1fr]">
+      <section className="px-4 py-16 max-w-[100vw] w-[100vw] md:px-6 lg:py-32 lg:px-8 bg-gradient-to-r from-[#11B0AC] to-[#13A2B2] grid lg:grid-cols-[1fr_3fr_1fr]">
         <div id="hero-left" className="hidden lg:block w-full">
           <img src="https://media.hirehiddentalent.com/images/about-page-images/about-hero-left-words" alt="" width="210" className="mx-auto" />
         </div>
         <div id="hero" className="bg-white px-4 py-24 md:px-8 rounded-[20px] grid gap-4 relative">
           <h1 className="bg-white bg-opacity-25 backdrop-blur-[1px] rounded-[6px] text-3xl text-center z-10 lg:bg-opacity-0">Why We're Different</h1>
           <div className="flex">
-            <img  src="https://media.hirehiddentalent.com/images/about-page-images/about-hero-image-1" alt="" className="absolute w-1/3 md:w-1/5 lg:w-1/4 -top-12 -left-8 md:-left-4 lg:-top-16 lg:-left-20 z-0" />
-            <img src="https://media.hirehiddentalent.com/images/about-page-images/about-hero-image-2" alt="" className="absolute w-1/3 md:w-1/5 lg:w-1/4 -bottom-12 -right-8 md:-bottom-16 md:-right-8 lg:-right-20 lg:-bottom-16 z-0" />
+            <img  src="https://media.hirehiddentalent.com/images/about-page-images/about-hero-image-1" alt="" className="absolute w-1/3 md:w-1/5 lg:w-[12vw] -top-12 -left-8 md:-left-4 lg:-top-[6vw] lg:-left-[6vw] z-0" />
+            <img src="https://media.hirehiddentalent.com/images/about-page-images/about-hero-image-2" alt="" className="absolute w-1/3 md:w-1/5 lg:w-[12vw] -bottom-12 -right-8 md:-bottom-16 md:-right-8 lg:-right-[6vw] lg:-bottom-[6vw] z-0" />
           </div>
-          <p className="lg:max-w-[55ch] justify-self-center text-justify">
+          <p className="lg:max-w-[50ch] justify-self-center text-justify">
             At Hidden Talent, our mission is to help our clients discover and connect talented people to engaging and rewarding work by creating a white-glove experience 
             through honesty, humility, and empathy. We seek to inspire a positive change in all things hiring and are actively working to make a positive impact within 
             the industry. We know what we do affects people's lives and we don't take it for granted.
           </p>
-          <p className="lg:max-w-[55ch] justify-self-center text-justify">
+          <p className="lg:max-w-[50ch] justify-self-center text-justify">
             Founder Abel witnessed firsthand just how disconnected the recruiting industry has become and was saddened by the state of things. 
             He knew there was a better way to go about this process, and after many years in the industry, he decided to branch out on his own. 
             He established Hidden Talent in 2022 to begin executing this vision and his white-glove approach immediately took off.
           </p>
-          <p className="z-10 lg:max-w-[55ch] justify-self-center text-justify">
+          <p className="z-10 lg:max-w-[50ch] justify-self-center text-justify">
             Hidden Talent looks beyond people on paper by recognizing every person as a human being and treats each person with the dignity and respect they deserve. 
             With how critical a strong company culture is today, we don't just fill roles for the sake of it. 
             We approach hiring with the goal of finding someone who will bring enthusiasm and positivity to their job every day. We all want to engage in meaningful work 
@@ -356,7 +356,8 @@ export default function AboutPage() {
           <img src="https://media.hirehiddentalent.com/images/about-page-images/about-hero-right-words" alt="" width="210" className="mx-auto" />
         </div>
       </section>
-      <section className="px-6 py-16 max-w-[100vw] w-[100vw] lg:py-24 lg:px-8 grid gap-12 md:gap-16">
+      <section className="px-6 py-16 max-w-[100vw] w-[100vw] lg:py-24 lg:px-8 grid gap-12 md:gap-16 relative">
+        <img src="https://media.hirehiddentalent.com/images/about-page-images/about-page-side-images" alt="" className="absolute hidden md:block right-0 md:h-[80vh] lg:h-[150vh] md:top-[calc(50%-40vh)] lg:top-[calc(50%-75vh)]" />
         <h2 id="values" className="text-3xl text-center"><span className="text-hidden-teal">Values</span> That Drive Us</h2>
         <div className="w-full grid gap-x-4 grid-cols-[25fr_75fr] md:pr-[20vw] md:-ml-2">
           <div id="heart-left" className="flex items-center justify-center">
