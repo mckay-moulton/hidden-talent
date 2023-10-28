@@ -35,7 +35,7 @@ export default function Nav() {
   }, [scrollY])
 
   return (
-    <nav id="navbar" className="px-4 py-8 md:px-8 md:py-12 lg:px-16 lg:py-6 flex justify-between items-center bg-white font-['Prompt'] tracking-[0.0125em] top-0 left-0 z-50">
+    <nav id="navbar" className="px-4 py-8 md:px-8 md:py-12 lg:px-16 lg:py-6 flex justify-between items-center bg-white font-['Prompt'] tracking-[0.0125em] top-0 left-0 z-[100]">
       <Link href="/">
         <img
           src="/hidden-talent-logo-full-width.png"

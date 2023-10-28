@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-hidden-black flex flex-col items-center content-center justify-center justify-items-center px-4 py-8 gap-6 text-white text-center">
+    <footer className="bg-hidden-black flex flex-col items-center content-center justify-center justify-items-center px-4 py-8 gap-6 text-white text-center relative z-[100]">
       <Link href="/" className="flex items-center justify-center">
           <img
             src="/hidden-talent-logo-full-width-dark.png"
