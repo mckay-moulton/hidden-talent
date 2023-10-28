@@ -8,35 +8,52 @@ import { usePathname } from 'next/navigation'
 
 export default function Nav() {
   const [open, setOpen] = useState(false)
-  const [scrollY, setScrollY] = useState(0)
+  // const [scrollY, setScrollY] = useState(0)
+  // const [scrollDirection, setScrollDirection] = useState('down')
 
-  useEffect(() => {
-    setScrollY(window.scrollY)
+  // useEffect(() => {
+  //   window.addEventListener('scrollend', event => {
+  //     console.log('scroll end')
 
-    const navbar = document.querySelector('#navbar')
+  //     if (window.scrollY > 0) {
+  //       if (window.scrollY < scrollY) {
+  //         navbar.style.position = 'sticky'
+  //         navbar.style.position = '0 1px 2px 0 #0a0a0a33'
+  //       }
+  //     } else {
+  //       navbar.style.position = 'static'
+  //       navbar.style.boxShadow = '0 0 0 0 #0a0a0a33'
+  //     }
+  //   }, { passive: true })
+  // }, [])
 
-    document.addEventListener('scroll', event => {
-      // if (window.scrollY < scrollY) {
-      if (scrollY - window.scrollY > 0) {
-        navbar.style.position = "sticky"
-        navbar.style.boxShadow = "0 1px 2px 0 #0a0a0a33"
-      } else {
-        navbar.style.position = "static"
-        navbar.style.boxShadow = "0 0 0 0 #0a0a0a33"
-        setOpen(false)
-      }
+  // useEffect(() => {
+  //   setScrollY(window.scrollY)
 
-      if (window.scrollY === 0) {
-        navbar.style.display = 'static'
-        navbar.style.boxShadow = "0 0 0 0 #0a0a0a33"
-      }
+  //   const navbar = document.querySelector('#navbar')
+
+  //   document.addEventListener('scroll', event => {
+  //     // if (window.scrollY < scrollY) {
+  //     if (scrollY - window.scrollY > 0) {
+  //       navbar.style.position = "sticky"
+  //       navbar.style.boxShadow = "0 1px 2px 0 #0a0a0a33"
+  //     } else {
+  //       navbar.style.position = "static"
+  //       navbar.style.boxShadow = "0 0 0 0 #0a0a0a33"
+  //       setOpen(false)
+  //     }
+
+  //     if (window.scrollY === 0) {
+  //       navbar.style.display = 'static'
+  //       navbar.style.boxShadow = "0 0 0 0 #0a0a0a33"
+  //     }
       
-      setScrollY(window.scrollY)
-    }, { passive: true })
-  }, [scrollY])
+  //     setScrollY(window.scrollY)
+  //   }, { passive: true })
+  // }, [scrollY])
 
   return (
-    <nav id="navbar" className="px-4 py-8 md:px-8 md:py-12 lg:px-16 lg:py-6 flex justify-between items-center bg-white font-['Prompt'] tracking-[0.0125em] top-0 left-0 z-[100]">
+    <nav id="navbar" className="w-full max-w-[100vw] sticky px-4 py-8 md:px-8 md:py-12 lg:px-16 lg:py-6 flex justify-between items-center bg-white font-['Prompt'] tracking-[0.0125em] top-0 left-0 z-[100]">
       <Link href="/">
         <img
           src="/hidden-talent-logo-full-width.png"
