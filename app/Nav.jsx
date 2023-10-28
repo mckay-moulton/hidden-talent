@@ -17,7 +17,7 @@ export default function Nav() {
 
     document.addEventListener('scroll', event => {
       // if (window.scrollY < scrollY) {
-      if (scrollY - window.scrollY > 0 && Math.abs(scrollY - window.scrollY) > 5) {
+      if (scrollY - window.scrollY > 0) {
         navbar.style.position = "sticky"
         navbar.style.boxShadow = "0 1px 2px 0 #0a0a0a33"
       } else {
@@ -32,7 +32,7 @@ export default function Nav() {
       }
       
       setScrollY(window.scrollY)
-    })
+    }, { passive: true })
   }, [scrollY])
 
   return (

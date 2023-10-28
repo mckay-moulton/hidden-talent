@@ -22,6 +22,7 @@ export default function BackToTop() {
       
       setScrollY(window.scrollY)
     })
+    
   }, [scrollY])
   return (
     <button
