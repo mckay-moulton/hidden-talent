@@ -7,16 +7,12 @@ export default function ContactForm({ id }) {
   const [sending, setSending] = useState(false)
   const [sent, setSent] = useState(false)
 
-  const date = new Date(Date.now())
-  const month = date.getMonth() + 1
-  const formattedDate = `${date.getFullYear()}-${month < 10 ? '0' + (month) : month}-${date.getDate() < 10 ? '0' + date.getDate() : date.getDate()}`
-
   function handleSubmit(event) {
     event.preventDefault()
 
     setSending(true)
 
-    const { name, city, email, phone, inquiry, jobTitle, minPay, maxPay, timelineStart, timelineEnd, fieldType, desiredRole, details } = event.target
+    const { name, city, email, phone, inquiry, details } = event.target
 
     fetch('/api/contact', {
       method: 'POST',
@@ -29,13 +25,6 @@ export default function ContactForm({ id }) {
         email: email.value,
         phone: phone.value,
         inquiry: inquiry.value,
-        jobTitle: jobTitle !== undefined ? jobTitle.value : '',
-        minPay: minPay !== undefined ? minPay.value : 0,
-        maxPay: maxPay !== undefined ? maxPay.value : 0,
-        timelineStart: timelineStart !== undefined ? timelineStart.value : '',
-        timelineEnd: timelineEnd !== undefined ? timelineEnd.value : '',
-        fieldType: fieldType !== undefined ? fieldType.value : '',
-        desiredRole: desiredRole !== undefined ? desiredRole.value : '',
         details: details.value,
       })
     })
@@ -109,89 +98,6 @@ export default function ContactForm({ id }) {
           <option value="job">Looking for my dream job</option>
         </select>
       </div>
-      {/* {inquiryType === 'talent' ? (
-        <> */}
-          <div style={{ display: inquiryType === 'talent' ? 'flex' : 'none' }} className="flex flex-col gap-1">
-            <label htmlFor="jobTitle">What is the job title?</label>
-            <input 
-              id="jobTitle"
-              name="jobTitle"
-              placeholder="Engineer"
-            />
-          </div>
-          <fieldset style={{ display: inquiryType === 'talent' ? 'flex' : 'none' }} className="grid grid-cols-[1fr_auto_1fr] items-center gap-2 w-full">
-            <legend className="mb-1">What is the pay range?</legend>
-              <div className="relative w-full">
-                <label htmlFor="minPay" className="absolute top-1 right-2 text-hidden-teal text-xs">Min</label>
-                <input 
-                  id="minPay"
-                  name="minPay"
-                  type="number"
-                  placeholder="10000"
-                  className="w-full"
-                />
-              </div>
-              <span className="text-2xl font-black">-</span>
-              <div className="relative w-full">
-                <label htmlFor="maxPay" className="absolute top-1 right-2 text-hidden-teal text-xs">Max</label>
-                <input
-                  id="maxPay"
-                  name="maxPay"
-                  type="number"
-                  placeholder="30000"
-                  className="w-full"
-                />
-              </div>
-          </fieldset>
-          <fieldset style={{ display: inquiryType === 'talent' ? 'flex' : 'none' }} className="grid grid-cols-[1fr_auto_1fr] items-center gap-2 w-full">
-            <legend className="mb-1">What is the timeline to get started?</legend>
-              <div className="relative w-full">
-                <label htmlFor="timelineStart" className="absolute top-1 right-2 text-white text-xs">Start</label>
-                <input 
-                  id="timelineStart"
-                  name="timelineStart"
-                  type="date"
-                  defaultValue={formattedDate}
-                  className="w-full py-3.5 text-sm"
-                />
-              </div>
-              <span className="text-2xl font-black">-</span>
-              <div className="relative w-full">
-                <label htmlFor="timelineEnd" className="absolute top-1 right-2 text-white text-xs">End</label>
-                <input
-                  id="timelineEnd"
-                  name="timelineEnd"
-                  type="date"
-                  defaultValue={formattedDate}
-                  className="w-full py-3.5 text-sm"
-                />
-              </div>
-          </fieldset>
-        {/* </>
-      ) : (
-        <> */}
-          <div style={{ display: inquiryType !== 'talent' ? 'flex' : 'none' }} className="flex flex-col gap-1">
-            <label htmlFor="fieldType" className="leading-snug">
-              What fields/industries are you looking to work in?
-            </label>
-            <input 
-              id="fieldType"
-              name="fieldType"
-              placeholder="Accounting, management, tech, etc."
-            />
-          </div>
-          <div style={{ display: inquiryType !== 'talent' ? 'flex' : 'none' }} className="flex flex-col gap-1">
-            <label htmlFor="desiredRole">
-              What role would you like?
-            </label>
-            <input 
-              id="desiredRole"
-              name="desiredRole"
-              placeholder="Accountant, mechanic, etc."
-            />
-          </div>
-        {/* </> */}
-      
       <div className="flex flex-col gap-1">
         <label htmlFor="details">Inquiry Details</label>
         <textarea 

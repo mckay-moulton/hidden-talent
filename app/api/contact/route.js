@@ -9,8 +9,8 @@ export async function GET() {
 }
 
 export async function POST(request) {
-  const { name, city, email, phone, inquiry, jobTitle, minPay, maxPay, timelineStart, timelineEnd, fieldType, desiredRole, details } = await request.json()
-  console.log('request', name, city, email, phone, inquiry, jobTitle, minPay, maxPay, timelineStart, timelineEnd, fieldType, desiredRole, details)
+  const { name, city, email, phone, inquiry,  details } = await request.json()
+  // console.log('request', name, city, email, phone, inquiry, jobTitle, minPay, maxPay, timelineStart, timelineEnd, fieldType, desiredRole, details)
 
   const DOMAIN = process.env.MG_DOMAIN
   const API_KEY = process.env.MG_API_KEY
@@ -33,7 +33,7 @@ export async function POST(request) {
     `
   }
 
-  const staffEmail = inquiry === 'talent' ? ({
+  const staffEmail = {
     from: `Hidden Talent <${process.env.MAIL_FROM}>`,
     to: process.env.MAIL_TO,
     subject: `Contact request received at ${now}`,
@@ -44,27 +44,9 @@ export async function POST(request) {
         <p>Email: ${email}</p>
         <p>Phone: ${phone}</p>
         <p>Inquiry Type: ${inquiry}</p>
-        <p>Job Title ${jobTitle}</p>
-        <p>Pay Range: ${minPay ?? 0} - ${maxPay ?? 0}</p>
-        <p>Timeline: ${timelineStart} - ${timelineEnd}</p>
         <p>Details: ${details}</p>
       `
-  }) : ({
-    from: `Hidden Talent <${process.env.MAIL_FROM}>`,
-    to: process.env.MAIL_TO,
-    subject: `Contact request received at ${now}`,
-    html: `
-        <p>Date: ${now}</p>
-        <p>Name: ${name}</p>
-        <p>City: ${city}</p>
-        <p>Email: ${email}</p>
-        <p>Phone: ${phone}</p>
-        <p>Inquiry Type: ${inquiry}</p>
-        <p>Desired field/industry: ${fieldType}</p>
-        <p>Desired role: ${desiredRole}</p>
-        <p>Details: ${details}</p>
-      `
-  })
+  }
 
   await mg.messages.create(DOMAIN, staffEmail)
     .then(async response => {
@@ -86,51 +68,23 @@ export async function POST(request) {
         const client = mongo.db('VarialCMS')
         const contentModels = await client.collection('content_models')
         const contents = await client.collection('contents')
+        const contactRequests = await contentModels.findOne({ 'name.plural': 'contact-requests' })
 
-        if (inquiry === 'talent') {
-          const talentRequests = await contentModels.findOne({ 'name.plural': 'talent-requests' })
-
-          await contents.insertOne({
-            contentModel: talentRequests._id,
-            fields: {
-              name,
-              city,
-              email,
-              phoneNumber: phone,
-              jobTitle,
-              minimumPay: minPay,
-              maximumPay: maxPay,
-              timelineStart,
-              timelineEnd,
-              inquiryDetails: details,
-            },
-            published: true,
-            createdAt: now,
-            updatedAt: now,
-            __v: 0,
-          })
-        }
-
-        if (inquiry === 'job') {
-          const jobRequests = await contentModels.findOne({ 'name.plural': 'job-requests' })
-
-          await contents.insertOne({
-            contentModel: jobRequests._id,
-            fields: {
-              name,
-              city,
-              email,
-              phoneNumber: phone,
-              fieldOrIndustry: fieldType,
-              desiredRole,
-              inquiryDetails: details,
-            },
-            published: true,
-            createdAt: now,
-            updatedAt: now,
-            __v: 0,
-          })
-        }
+        await contents.insertOne({
+          contentModel: contactRequests._id,
+          fields: {
+            name,
+            city,
+            email,
+            phoneNumber: phone,
+            inquiryType: inquiry,
+            inquiryDetails: details,
+          },
+          published: true,
+          createdAt: now,
+          updatedAt: now,
+          __v: 0,
+        })
       } catch (error) {
         console.error('MongoDB Error', error)
       }
