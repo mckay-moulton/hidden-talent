@@ -334,7 +334,7 @@ export default function JobSeekersPage() {
           </p>
           <Link 
             href="/contact" 
-            className="bg-gradient-to-b font-['Prompt'] from-[#11B0AC] to-[#03D8D4] hover:from-[#03D8D4] hover:to-[hsl(179,97%,46%)] text-center rounded-full py-5 uppercase font-bold text-xl text-[#0a0a0a] w-full md:px-16 md:w-fit"
+            className="bg-gradient-to-b from-[#11B0AC] to-[#03D8D4] hover:from-[#ffffff] hover:to-[#ffffff] hover:text-hidden-teal border border-[#0a0a0a] hover:border-hidden-teal text-center rounded-full py-5 uppercase font-semibold text-lg text-white px-12"
           >
             Learn More
           </Link>

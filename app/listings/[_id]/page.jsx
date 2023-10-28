@@ -37,11 +37,11 @@ export default async function ListingPage({ params }) {
   const listing = await getListing(params._id)
 
   return (
-    <main className="px-4 py-8 flex flex-col items-center">
+    <main className="px-4 py-8 flex flex-col justify-center items-center">
       <head>
         <title>{listing.fields.jobTitle}</title>
       </head>
-      <Suspense fallback={<span>Loading...</span>}>
+      <Suspense fallback={<span className="text-[29px] md:text-[42px] flex items-center">Loading... <img src="loading.svg" alt="" width="32" className="animate-spin" /></span>}>
         <Hero listing={listing} />
         <RichText src={listing.fields.jobAnnouncement} className="flex flex-col gap-2 items-start max-w-2xl mx-auto" /> 
       </Suspense>
