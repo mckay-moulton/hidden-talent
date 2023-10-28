@@ -16,7 +16,8 @@ export default function Nav() {
     const navbar = document.querySelector('#navbar')
 
     document.addEventListener('scroll', event => {
-      if (window.scrollY < scrollY) {
+      // if (window.scrollY < scrollY) {
+      if (scrollY - window.scrollY > 0 && Math.abs(scrollY - window.scrollY) > 5) {
         navbar.style.position = "sticky"
         navbar.style.boxShadow = "0 1px 2px 0 #0a0a0a33"
       } else {
