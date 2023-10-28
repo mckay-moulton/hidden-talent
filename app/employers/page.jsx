@@ -20,20 +20,24 @@ export default function EmployersPage() {
     gsap.from('#hero', {
       scrollTrigger: '#hero',
       opacity: 0,
+      y: 200,
       duration: 0.35,
     })
     gsap.to('#hero', {
       scrollTrigger: '#hero',
+      y: 0,
       opacity: 1,
     })
     gsap.from('#big-arrow-pc', {
       scrollTrigger: '#big-arrow-pc',
       opacity: 0,
+      y: 200,
       duration: 0.35,
     })
     gsap.to('#big-arrow-pc', {
       scrollTrigger: '#big-arrow-pc',
       opacity: 1,
+      y: 0,
     })
 
 
