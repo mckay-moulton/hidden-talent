@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin='true' />
         <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600&display=swap" rel="stylesheet" />
       </head>
-      <body>
+      <body className='w-screen max-w-[100vw] overflow-hidden'>
         <BackToTop className="absolute bottom-0 right-0" />
         <Nav />
         {children}
