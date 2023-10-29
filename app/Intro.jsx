@@ -130,19 +130,19 @@ export default function IntroSection() {
         >
           <h2 className='text-xl text-center'>We bring employees and employers together.</h2>
           <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-24 items-center content-center text-center'>
-            <div className='grid  gap-4 items-center justify-center justify-items-center h-full'>
+            <div className='grid  gap-4 items-center justify-center justify-items-center lg:h-full'>
               <img src="handshake.svg" alt="" width="115" />
               <p className="self-end"><span className='block text-hidden-teal text-3xl font-bold'>100+</span> <span className='block'>jobs</span> placed</p>
             </div>
-            <div className='grid gap-4 items-center h-full justify-items-center'>
+            <div className='grid gap-4 items-center lg:h-full justify-items-center'>
               <img src="office-buildings.svg" alt="" width="115" />
               <p className="self-end"><span className='block text-hidden-teal text-3xl font-bold'>16</span> <span className='block'>industries</span> served</p>
             </div>
-            <div className='grid gap-4 items-center h-full justify-items-center'>
+            <div className='grid gap-4 items-center lg:h-full justify-items-center'>
               <img src="networking.svg" alt="" width="115" />
               <p className="self-end"><span className='block text-hidden-teal text-3xl font-bold'>50</span> <span className='block'>professionals</span> helped</p>
             </div>
-            <div className='grid gap-4 items-center h-full justify-items-center'>
+            <div className='grid gap-4 items-center lg:h-full justify-items-center'>
               <img src="experience.svg" alt="" height="115" className="relative left-2.5" />
               <p><span className='block text-hidden-teal text-3xl font-bold'>10</span> <span className='block'>years</span> experience</p>
             </div>
