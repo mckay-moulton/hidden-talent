@@ -30,7 +30,7 @@ export default function BackToTop() {
       onClick={() => {
         window.scrollTo(0, 0)
       }}
-      className="fixed top-[calc(100vh-124px)] lg:top-[calc(100vh-58px)] right-4 lg:right-4 rounded-[8px] z-[999] p-2.5 border border-hidden-teal bg-white hidden"
+      className="fixed top-[calc(100vh-132px)] lg:top-[calc(100vh-58px)] right-4 lg:right-4 rounded-[8px] z-[999] p-2.5 border border-hidden-teal bg-white hidden"
     >
       <img src="/small-arrow-solid.svg" alt="back to top" width="24" className="rotate-90" />
     </button>
