@@ -21,14 +21,33 @@ export default function RootLayout({ children }) {
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin='true' />
         <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600&display=swap" rel="stylesheet" />
       </head>
-      <body className='max-w-[100vw]'>
-        <div className='grid grid-rows-[auto_1fr_auto] min-h-screen w-screen relative'>
-          <BackToTop className="absolute bottom-0 right-0" />
-          <Nav />
-          {children}
-          <Footer />
-        </div>
+      <body>
+        <Nav />
+        {children}
+        <Footer />
       </body>
     </html>
   )
 }
+
+
+// export default function RootLayout({ children }) {
+//   return (
+//     <html lang="en" className={oxygen.className}>
+//       <head>
+//         <link rel="icon" href="/hidden-talent-icon.svg" />
+//         <link rel="preconnect" href="https://fonts.googleapis.com" />
+//         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin='true' />
+//         <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600&display=swap" rel="stylesheet" />
+//       </head>
+//       <body className='max-w-[100vw]'>
+//         <div className='grid grid-rows-[auto_1fr_auto] min-h-screen w-screen relative'>
+//           <BackToTop className="absolute bottom-0 right-0" />
+//           <Nav />
+//           {children}
+//           <Footer />
+//         </div>
+//       </body>
+//     </html>
+//   )
+// }
