@@ -22,6 +22,7 @@ export default function RootLayout({ children }) {
         <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600&display=swap" rel="stylesheet" />
       </head>
       <body>
+        <BackToTop className="absolute bottom-0 right-0" />
         <Nav />
         {children}
         <Footer />
