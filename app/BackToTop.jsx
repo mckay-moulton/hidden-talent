@@ -10,18 +10,26 @@ export default function BackToTop() {
     const button = document.querySelector('#top-button')
 
     document.addEventListener('scroll', event => {
-      if (window.scrollY < scrollY) {
-        button.style.display = 'block'
-      } else {
-        button.style.display = 'none'
+      if (window.scrollY === 0) {
+        button.style.display = 'static'
+        button.style.boxShadow = "0 0 0 0 #0a0a0a33"
+        return
       }
 
-      if (window.scrollY === 0) {
-        button.style.display = 'none'
+      if (Math.abs(window.scrollY - scrollY) > 1) {
+        if (window.scrollY < scrollY) {
+          button.style.display = 'block'
+        } else {
+          button.style.display = 'none'
+        }
+
+        if (window.scrollY === 0) {
+          button.style.display = 'none'
+        }
+        
+        setScrollY(window.scrollY)
       }
-      
-      setScrollY(window.scrollY)
-    })
+    }, { passive: true })
     
   }, [scrollY])
   return (
