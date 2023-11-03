@@ -323,7 +323,7 @@ export default function AboutPage() {
   }, [])
 
   return (
-    <main className="w-screen max-w-[100vw] overflow-hidden">
+    <main className="w-screen max-w-[100vw] overflow-x-hidden">
       <section className="px-4 py-16 max-w-[100vw] w-[100vw] md:px-6 lg:py-32 lg:px-8 bg-gradient-to-r from-[#11B0AC] to-[#13A2B2] grid lg:grid-cols-[1fr_3fr_1fr]">
         <div id="hero-left" className="hidden lg:block w-full">
           <img src="https://media.hirehiddentalent.com/images/about-page-images/about-hero-left-words" alt="" width="210" className="mx-auto" />
