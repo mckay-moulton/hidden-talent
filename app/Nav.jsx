@@ -9,23 +9,6 @@ import { usePathname } from 'next/navigation'
 export default function Nav() {
   const [open, setOpen] = useState(false)
   const [scrollY, setScrollY] = useState(0)
-  // const [scrollDirection, setScrollDirection] = useState('down')
-
-  // useEffect(() => {
-  //   window.addEventListener('scrollend', event => {
-  //     console.log('scroll end')
-
-  //     if (window.scrollY > 0) {
-  //       if (window.scrollY < scrollY) {
-  //         navbar.style.position = 'sticky'
-  //         navbar.style.position = '0 1px 2px 0 #0a0a0a33'
-  //       }
-  //     } else {
-  //       navbar.style.position = 'static'
-  //       navbar.style.boxShadow = '0 0 0 0 #0a0a0a33'
-  //     }
-  //   }, { passive: true })
-  // }, [])
 
   useEffect(() => {
     setScrollY(window.scrollY)
@@ -61,14 +44,14 @@ export default function Nav() {
           src="/hidden-talent-logo-full-width.png"
           width="180"
           alt="Home"
-          className="md:w-48 lg:hidden"
+          className="md:w-72 lg:hidden"
         />
         <img
           src="/hidden-talent-logo-full-width.png"
           width="486"
           height="68"
           alt="Home"
-          className="hidden lg:block lg:w-[30vw]"
+          className="hidden lg:block lg:w-[20vw] 2xl:w-[25vw]"
         />
       </Link>
       <button onClick={() => setOpen(!open)} className="lg:hidden">

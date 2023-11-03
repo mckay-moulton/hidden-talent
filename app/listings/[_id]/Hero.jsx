@@ -3,6 +3,7 @@
 import { motion } from "framer-motion"
 
 export default function Hero({ listing }) {
+  const compensation = Number(listing.fields.compensation).toLocaleString('en-US')
   return (
     <motion.div
       initial={{ opacity: 0, y: 200 }} 
@@ -17,7 +18,10 @@ export default function Hero({ listing }) {
         <p className="flex flex-col gap-2 items-center justify-between w-1/2 lg:w-fit"><img src="/building.svg" alt="" className="h-[32px] w-auto" />{listing.fields.company.fields.name}</p>
         <p className="flex flex-col gap-2 items-center justify-between w-1/2 lg:w-fit"><img src="/maps-and-flags.svg" alt="" className="h-[28px] w-auto" />{listing.fields.location}</p>
         <p className="flex flex-col gap-2 items-center justify-between w-1/2 lg:w-fit"><img src={listing.fields.jobType === 'Full-time' ? '/full-time.svg' : '/part-time.svg'} alt="" className="h-[32px] w-auto" />{listing.fields.jobType}</p>
-        <p className="flex flex-col gap-2 items-center justify-between w-1/2 lg:w-fit"><img src="/money.svg" alt="" className="h-[32px] w-auto" />${listing.fields.compensation}</p>
+        <p className="flex flex-col gap-2 items-center justify-between w-1/2 lg:w-fit">
+          <img src="/money.svg" alt="" className="h-[32px] w-auto" />
+            ${compensation}
+          </p>
       </div>
     </motion.div>
   )

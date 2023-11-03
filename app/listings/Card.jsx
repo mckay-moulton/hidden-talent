@@ -23,7 +23,7 @@ export default function Card({ listing }) {
       <h2 className="text-2xl md:text-[29px] text-center leading-tight">{listing.fields.jobTitle}</h2>
       <div className="flex justify-evenly w-full">
         <p className="flex items-center gap-2"><img src={listing.fields.jobType === 'Full-time' ? 'full-time.svg' : 'part-time.svg'} alt="" width="28" />{listing.fields.jobType}</p>
-        <p className="flex items-center gap-2"><img src="money.svg" alt="" width="32" />${listing.fields.compensation}</p>
+        <p className="flex items-center gap-2"><img src="money.svg" alt="" width="32" />${Number(listing.fields.compensation).toLocaleString('en-US')}</p>
       </div>
       <Link
         href={`/listings/${listing._id}`}

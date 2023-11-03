@@ -95,7 +95,7 @@ export default function ContactForm({ id }) {
           onChange={event => setInquiryType(event.target.value)}
         >
           <option value="talent">I am seeking talent</option>
-          <option value="job">Looking for my dream job</option>
+          <option value="job">I am searching for my dream job</option>
         </select>
       </div>
       <div className="flex flex-col gap-1">

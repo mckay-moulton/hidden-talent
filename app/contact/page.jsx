@@ -75,9 +75,9 @@ export default function ContactPage() {
 
 
   return (
-    <main className="grid place-items-center py-4 pb-0 lg:py-16 lg:pb-0 gap-6 lg:gap-24 mx-auto">
+    <main className="grid place-items-center py-4 pb-0 lg:py-16 lg:pb-0 gap-6 lg:gap-24 mx-auto w-screen max-w-[100vw] overflow-x-hidden">
       
-      <section id="contact-images" className="grid lg:grid-cols-2 items-center gap-8 lg:gap-24 px-4 py-8 max-w-[1600px]">
+      <section id="contact-images" className="grid lg:grid-cols-2 items-center gap-8 lg:gap-24 px-4 py-8 max-w-[1600px] mx-auto justify-items-center">
         <div className="relative w-full">
           <img src="arrow-outline-teal.png" alt="" className="absolute scale-[125%] right-[12.5%] top-[12.5%]" />
           <img src="https://media.hirehiddentalent.com/images/contact-page-images/shaking-hands" alt="" className="relative z-50" />
@@ -91,8 +91,7 @@ export default function ContactPage() {
           <img src="small-arrow-solid.svg" alt="" width="32" className="rotate-180 md:w-12 lg:w-12" />
         </div>
         <p className=" font-['Prompt'] text-xl lg:text-2xl text-center md:max-w-[75%] lg:max-w-[75%]">
-          We love helping people find the next step in their career or for their company. 
-          Even if you find that you don't need our services, we are still here to offer guidance and direction, no matter what you decide to do next.
+          Our passion is in helping people, and we cherish every opportunity to work with businesses and people. We look forward to partnering with you.
         </p>
         <div className="flex justify-evenly md:absolute md:-right-2 md:w-[12.5%] lg:-right-6">
           <img src="small-arrow-solid.svg" alt="" width="32" className="md:w-12 lg:w-12" />

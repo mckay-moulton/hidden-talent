@@ -244,7 +244,7 @@ export default function EmployersPage() {
   }, [])
 
   return (
-    <main>
+    <main className="w-screen max-w-[100vw] overflow-x-hidden">
       
       {/* hero */}
       <section className="px-4 py-8 lg:px-16 lg:py-24 pb-0 lg:pb-0 relative flex flex-col gap-16 items-center">
@@ -272,7 +272,7 @@ export default function EmployersPage() {
           className="absolute -top-64 -z-10 hidden lg:block lg:w-[1085px] self-center" 
         />
         <div className="relative grid place-items-center lg:-mt-0">
-          <img id="big-arrow-mobile" src="/arrow-big.svg" alt="" className="relative -z-10 top-0 left-0 lg:hidden w-full" />
+          <img id="big-arrow-mobile" src="/arrow-big.svg" alt="" className="relative -z-10 top-0 left-0 max-w-[275px] md:max-w-md lg:hidden w-full" />
           <h2 id="our-approach" className="text-[29px] md:text-[42px] w-full text-center lg:w-fit  lg:px-32 py-4 lg:py-6 border-2 border-[#03D8D4] rounded-[20px] absolute lg:relative bg-white lg:mt-8">Our Approach</h2>
         </div>
       </section>
@@ -1000,7 +1000,7 @@ export default function EmployersPage() {
             </svg>
           </div>
         </div>
-        <img id="last-step" src="/last-step.svg" alt="" width="375" className="w-full lg:max-w-[300px] lg:self-center z-50 lg:-mt-60" />
+        <img id="last-step" src="/last-step.svg" alt="" width="375" className="w-full md:max-w-xs lg:max-w-[300px] lg:self-center z-50 lg:-mt-60" />
       </section>
       <section className="px-4 py-8 lg:px-16 lg:py-24 flex flex-col gap-16 items-center">
         <div id="additional-services" className="bg-[#0a0a0a] text-white px-6 py-10 lg:px-16 lg:py-16 flex flex-col gap-16 rounded-[20px] max-w-7xl mx-auto">

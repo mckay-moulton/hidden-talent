@@ -157,7 +157,7 @@ export default function ServicesSection() {
               transition={{ duration: 0.35 }} 
               className="text-xl mt-4"
             >  
-              Offers and Onboarding
+              Offers & Onboarding
             </motion.h4>
             <motion.p 
               initial={{ opacity: 0, y: 200 }} 

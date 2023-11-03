@@ -102,7 +102,7 @@ export default function IntroSection() {
       <img src="/bumper-left.svg" id="bumper-left" width="24" className="hidden lg:block lg:w-10 mt-32 opacity-0" />
       <section className='flex flex-col gap-8 lg:gap-16 px-4 py-12 lg:py-16 items-center relative'>
         <h1 id="intro-h1" className='text-[29px] md:text-[42px] text-center'>
-          Delivering <span className='text-hidden-teal'>Great People</span> to <span className='text-hidden-teal'>Great Companies</span>
+          Delivering <span className='text-hidden-teal'>Great People</span> to <span className='text-hidden-teal md:block lg:inline'>Great Companies</span>
         </h1>
         <div className='flex flex-col gap-8 lg:gap-24 lg:flex-row max-w-[1280px]'>
           <div 
@@ -150,7 +150,7 @@ export default function IntroSection() {
         </div>
         <p id="start-your-search" className="mt-8">
           <Link 
-            href="/" 
+            href="/contact" 
             className='bg-gradient-to-b from-[#11B0AC] to-[#03D8D4] hover:from-[#ffffff] hover:to-[#ffffff] hover:text-hidden-teal border border-[#fff] hover:border-hidden-teal text-center rounded-full py-5 uppercase font-semibold text-lg text-white px-12'
           >
             Start your search

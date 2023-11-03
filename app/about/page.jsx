@@ -323,19 +323,19 @@ export default function AboutPage() {
   }, [])
 
   return (
-    <main>
+    <main className="w-screen max-w-[100vw] overflow-hidden">
       <section className="px-4 py-16 max-w-[100vw] w-[100vw] md:px-6 lg:py-32 lg:px-8 bg-gradient-to-r from-[#11B0AC] to-[#13A2B2] grid lg:grid-cols-[1fr_3fr_1fr]">
         <div id="hero-left" className="hidden lg:block w-full">
           <img src="https://media.hirehiddentalent.com/images/about-page-images/about-hero-left-words" alt="" width="210" className="mx-auto" />
         </div>
         <div id="hero" className="bg-white px-4 py-24 md:px-8 rounded-[20px] grid gap-4 relative">
-          <h1 className="bg-white bg-opacity-25 backdrop-blur-[1px] rounded-[6px] text-3xl text-center z-10 lg:bg-opacity-0">Why We're Different</h1>
+          <h1 className="bg-white bg-opacity-25 backdrop-blur-[1px] rounded-[6px] text-[29px] md:text-[42px] text-center z-10 lg:bg-opacity-0">Why We're Different</h1>
           <div className="flex">
             <img  src="https://media.hirehiddentalent.com/images/about-page-images/about-hero-image-1" alt="" className="absolute w-1/3 md:w-1/5 lg:w-[12vw] -top-12 -left-8 md:-left-4 lg:-top-[6vw] lg:-left-[6vw] z-0" />
             <img src="https://media.hirehiddentalent.com/images/about-page-images/about-hero-image-2" alt="" className="absolute w-1/3 md:w-1/5 lg:w-[12vw] -bottom-12 -right-8 md:-bottom-16 md:-right-8 lg:-right-[6vw] lg:-bottom-[6vw] z-0" />
           </div>
           <p className="lg:max-w-[50ch] justify-self-center text-justify">
-            At Hidden Talent, our mission is to help our clients discover and connect talented people to engaging and rewarding work by creating a white-glove experience 
+            At Hidden Talent, our <span className="font-bold">mission</span> is to help our clients discover and connect talented people to engaging and rewarding work by creating a white-glove experience 
             through honesty, humility, and empathy. We seek to inspire a positive change in all things hiring and are actively working to make a positive impact within 
             the industry. We know what we do affects people's lives and we don't take it for granted.
           </p>
@@ -357,8 +357,8 @@ export default function AboutPage() {
         </div>
       </section>
       <section className="px-6 py-16 max-w-[100vw] w-[100vw] lg:py-24 lg:px-8 grid gap-12 md:gap-16 relative">
-        <img src="https://media.hirehiddentalent.com/images/about-page-images/about-page-side-images" alt="" className="absolute hidden md:block right-0 md:h-[80vh] lg:h-[150vh] md:top-[calc(50%-40vh)] lg:top-[calc(50%-75vh)]" />
-        <h2 id="values" className="text-3xl text-center"><span className="text-hidden-teal">Values</span> That Drive Us</h2>
+        <img src="https://media.hirehiddentalent.com/images/about-page-images/about-page-side-images" alt="" className="absolute hidden md:block right-0 md:h-[95vh] lg:h-[150vh] md:top-[calc(50%-40vh)] lg:top-[calc(50%-75vh)]" />
+        <h2 id="values" className="text-[29px] md:text-[42px] text-center"><span className="text-hidden-teal">Values</span> That Drive Us</h2>
         <div className="w-full grid gap-x-4 grid-cols-[25fr_75fr] md:pr-[20vw] md:-ml-2">
           <div id="heart-left" className="flex items-center justify-center">
             <span className="text-5xl md:text-7xl font-bold absolute bg-white p-2">H</span>
@@ -369,7 +369,7 @@ export default function AboutPage() {
           <div id="heart-right" className="flex flex-col gap-4 items-center">
               <div className="flex flex-col items-center gap-2">
                 <img src="/heart.svg" alt="" width="40" />
-                <h3 className="text-hidden-teal text-2xl">Heart</h3>
+                <h3 className="text-hidden-teal text-2xl md:text-3xl">Heart</h3>
               </div>
               <p className="text-justify">
                 In recruiting, you can do all of the screening, pretests, calculated risks, and more on any candidate, but these are logical metrics. 
@@ -392,7 +392,7 @@ export default function AboutPage() {
           <div id="integrity-right" className="flex flex-col gap-4 items-center">
               <div className="flex flex-col items-center gap-2 mt-12 md:mt-24">
                 <img src="/integrity.svg" alt="" height="40" />
-                <h3 className="text-hidden-teal text-2xl">Integrity</h3>
+                <h3 className="text-hidden-teal text-2xl md:text-3xl">Integrity</h3>
               </div>
               <p className="text-justify">
                 Relationships are the backbone of successful job seeking and job placing. 
@@ -415,7 +415,7 @@ export default function AboutPage() {
           <div id="resilience-right" className="flex flex-col gap-4 items-center">
               <div className="flex flex-col items-center gap-2 mt-12 md:mt-24">
                 <img src="/resilience.svg" alt="" height="40" />
-                <h3 className="text-hidden-teal text-2xl">Resilience</h3>
+                <h3 className="text-hidden-teal text-2xl md:text-3xl">Resilience</h3>
               </div>
               <p className="text-justify">
                 Many hiring managers and recruiters know firsthand that finding the right person for the job is not something that happens overnight. 
@@ -437,7 +437,7 @@ export default function AboutPage() {
           <div id="excellence-right" className="flex flex-col gap-4 items-center">
               <div className="flex flex-col items-center gap-2 mt-12 md:mt-24">
                 <img src="/excellence.svg" alt="" height="40" />
-                <h3 className="text-hidden-teal text-2xl">Excellence</h3>
+                <h3 className="text-hidden-teal text-2xl md:text-3xl">Excellence</h3>
               </div>
               <p className="text-justify">
                 On top of each core value, we infuse the highest level of excellence. 
@@ -456,7 +456,7 @@ export default function AboutPage() {
       <section>
         {/* banner */}
         <div id="meet-abel-banner" className="flex justify-center items-center relative bg-gradient-to-r from-[#1DDDD9] to-[#13A2B2] p-8 md:p-10">
-          <span className="text-3xl text-center text-white w-fit">Meet Abel</span>
+          <span className="text-[29px] md:text-[42px] text-center text-white w-fit">Meet Abel</span>
           <div className="flex gap-4 absolute -left-96 md:-left-48 lg:-left-2">
             <img src="arrow-outline-right.svg" width="64" alt="" />
             <img src="arrow-outline-right.svg" width="64" alt="" />
