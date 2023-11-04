@@ -317,7 +317,7 @@ export default function JobSeekersPage() {
   }, [])
 
   return (
-    <main className="w-screen max-w-[100vw] overflow-x-hidden">
+    <main className="w-screen max-w-[100vw] overflow-x-clip">
       {/* hero */}
       <section className="px-4 py-8 flex flex-col lg:grid lg:grid-cols-2 gap-8 md:gap-16 md:max-w-2xl lg:max-w-[1600px] lg:px-16 lg:py-16 items-center mx-auto">
         <img id="hero-image" src="https://media.hirehiddentalent.com/images/job-seekers-page-images/job-seekers-hero" alt="" />

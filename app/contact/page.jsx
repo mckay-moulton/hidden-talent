@@ -75,7 +75,7 @@ export default function ContactPage() {
 
 
   return (
-    <main className="grid place-items-center py-4 pb-0 lg:py-16 lg:pb-0 gap-6 lg:gap-24 mx-auto w-screen max-w-[100vw] overflow-x-hidden">
+    <main className="grid place-items-center py-4 pb-0 lg:py-16 lg:pb-0 gap-6 lg:gap-24 mx-auto w-screen max-w-[100vw] overflow-x-clip">
       
       <section id="contact-images" className="grid lg:grid-cols-2 items-center gap-8 lg:gap-24 px-4 py-8 max-w-[1600px] mx-auto justify-items-center">
         <div className="relative w-full">

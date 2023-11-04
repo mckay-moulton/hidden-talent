@@ -13,7 +13,7 @@ export const metadata = {
 
 export default function HomePage() {
   return (
-    <main className='w-screen max-w-[100vw] overflow-x-hidden'>
+    <main className='w-screen max-w-[100vw] overflow-x-clip'>
       <HeroSection />
       <IntroSection />
       <AboutSection />

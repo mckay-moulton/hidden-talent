@@ -54,7 +54,7 @@ export default async function JobListingsPage() {
   
 
   return (
-    <main className="px-4 py-8 md:py-12 lg:py-16 flex flex-col gap-8 items-center w-screen max-w-[100vw] overflow-x-hidden">
+    <main className="px-4 py-8 md:py-12 lg:py-16 flex flex-col gap-8 items-center w-screen max-w-[100vw] overflow-x-clip">
       <H1 />
       {listings?.map(listing => (
         <Card key={listing._id} listing={listing} />

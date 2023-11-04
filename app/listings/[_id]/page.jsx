@@ -37,7 +37,7 @@ export default async function ListingPage({ params }) {
   const listing = await getListing(params._id)
 
   return (
-    <main className="px-4 py-8 md:px-8 flex flex-col justify-center items-center w-screen max-w-[100vw] overflow-x-hidden">
+    <main className="px-4 py-8 md:px-8 flex flex-col justify-center items-center w-screen max-w-[100vw] overflow-x-clip">
       <head>
         <title>{listing.fields.jobTitle}</title>
       </head>

@@ -244,7 +244,7 @@ export default function EmployersPage() {
   }, [])
 
   return (
-    <main className="w-screen max-w-[100vw] overflow-x-hidden">
+    <main className="w-screen max-w-[100vw] overflow-x-clip">
       
       {/* hero */}
       <section className="px-4 py-8 lg:px-16 lg:py-24 pb-0 lg:pb-0 relative flex flex-col gap-16 items-center">
