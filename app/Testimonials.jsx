@@ -57,7 +57,7 @@ export default function TestimonialSection() {
             `}
             author="Cade Wambolt, Managing Partner, Idaho Accounting Services"
             icon={
-              <img src="/testimonial-woman-1.svg" alt="" height="230" className="absolute md:bottom-4 -left-24 w-auto h-[400px] md:h-[400px] md:-left-[120px]" />
+              <img src="/who-you-know.svg" alt="" height="230" className="absolute md:bottom-4 -left-20 w-auto h-[400px] md:h-[400px] md:-left-[100px]" />
             }
           />
         </div>
