@@ -573,7 +573,7 @@ export default function JobSeekersPage() {
       {/* job offer */}
       <section className="py-16 flex flex-col items-center gap-12 md:gap-16 lg:gap-24 relative">
         <svg id="offer-center-line" className="absolute left-[calc(50%-1px)] -z-10 h-full">
-          <line x1="0" x2="0" y1="0" y2="3500" stroke="#13AAB0" strokeWidth="2px" />
+          <line x1="0" x2="0" y1="0" y2="4000" stroke="#13AAB0" strokeWidth="2px" />
         </svg>
         <div id="offer-heading" className="bg-gradient-to-r from-[#11B0AC] to-[#13A2B2] w-full py-6 lg:py-12 relative">
           <h2 className="text-center text-4xl lg:text-[42px] text-white max-w-[12ch] lg:max-w-none mx-auto">Attain the Best<br className="lg:hidden" /> Job Offer</h2>
