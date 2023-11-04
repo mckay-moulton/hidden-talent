@@ -55,7 +55,7 @@ export default function TestimonialSection() {
             He is a humble professional who brings care, expertise, and passion to the recruiting process.
             He successfully navigates a range of needs and took great care of our candidates. I recommend him to any job seeker or team looking to hire and grow.
             `}
-            author="Cade Wambolt, Managing Director, Idaho Accounting Services"
+            author="Cade Wambolt, Managing Partner, Idaho Accounting Services"
             icon={
               <img src="/testimonial-woman-1.svg" alt="" height="230" className="absolute md:bottom-4 -left-24 w-auto h-[400px] md:h-[400px] md:-left-[120px]" />
             }
