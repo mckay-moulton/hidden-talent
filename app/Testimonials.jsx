@@ -28,10 +28,12 @@ export default function TestimonialSection() {
         <div className="px-4 lg:px-16 grid gap-8 md:gap-16 2xl:grid-cols-3 2xl:gap-32 justify-items-center justify-center justify-content-center lg:pl-32 items-center content-center mx-auto">
           
           <Testimonial 
-            quote={`As a job seeker working with Abel, I have valued his professionalism, promptness, and attention to detail throughout the recruitment process. 
-            He went above and beyond to understand my skills, experience, and preferences to help match me with job opportunities that aligned with my career goals.
+            quote={`I am very grateful to have met Abel during my job employment search. 
+            Abel provided great counsel and advice to me, including assisting me in improving my resume, providing excellent interviewing tips, 
+            and sharing professional resources to ensure success and build up my confidence. Thanks to Abel's top-tier quality service, 
+            I was able to secure a job offer within weeks. Abel is the real deal."
             `}
-            author="Joe M., job seeker"
+            author="Duke T., job seeker"
             icon={
               <img src="/testimonial-man-1.svg" alt="" height="200" className="absolute md:bottom-4 -left-16 w-auto h-[400px] md:h-[400px] md:-left-[80px]" />
             }
@@ -49,9 +51,9 @@ export default function TestimonialSection() {
             }
           />
           <Testimonial 
-            quote={`I appreciated the approach, emphasis on both client and candidate experience, 
-            willingness to provide support and counsel throughout the process, friendliness and the focus on achieving a great outcome for all parties. 
-            Thank you!
+            quote={`Abel genuinely cares about connecting people to the right opportunities and it shows. 
+            He is a humble professional who brings care, expertise, and passion to the recruiting process.
+            He successfully navigates a range of needs and took great care of our candidates. I recommend him to any job seeker or team looking to hire and grow.
             `}
             author="Cade Wambolt, Managing Director, Idaho Accounting Services"
             icon={
