@@ -335,7 +335,7 @@ export default function AboutPage() {
             <img src="https://media.hirehiddentalent.com/images/about-page-images/about-hero-image-2" alt="" className="absolute w-1/3 md:w-1/5 lg:w-[12vw] -bottom-12 -right-8 md:-bottom-16 md:-right-8 lg:-right-[6vw] lg:-bottom-[6vw] z-0" />
           </div>
           <p className="lg:max-w-[50ch] justify-self-center text-justify">
-            At Hidden Talent, our <span className="font-bold">mission</span> is to help our clients discover and connect talented people to engaging and rewarding work by creating a white-glove experience 
+            At Hidden Talent, our mission is to help our clients discover and connect talented people to engaging and rewarding work by creating a white-glove experience 
             through honesty, humility, and empathy. We seek to inspire a positive change in all things hiring and are actively working to make a positive impact within 
             the industry. We know what we do affects people's lives and we don't take it for granted.
           </p>

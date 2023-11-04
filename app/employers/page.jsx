@@ -1005,31 +1005,27 @@ export default function EmployersPage() {
       <section className="px-4 py-8 lg:px-16 lg:py-24 flex flex-col gap-16 items-center">
         <div id="additional-services" className="bg-[#0a0a0a] text-white px-6 py-10 lg:px-16 lg:py-16 flex flex-col gap-16 rounded-[20px] max-w-7xl mx-auto">
           <h2 className="text-3xl text-center">Additional <span className="text-hidden-teal-dark">Services</span></h2>
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-4 items-center">
+            <img src="/ats.svg" width="112" alt="" className="lg:w-28" />
             <h3 className="text-hidden-teal-dark text-center">Application Tracking System (ATS) Support</h3>
-            <div className="grid lg:grid-cols-[auto_1fr] justify-items-center gap-4 lg:items-center lg:gap-16">
-              <img src="/ats.svg" width="48" alt="" className="lg:w-28" />
-              <p className="text-justify">
-                Implementing and choosing a new applicant tracking system can be cumbersome, 
-                especially with so many options and functions to choose from. 
-                Our experience over the years has given us real-world insight into 
-                how these systems work and which ones will be best suited for your company's needs. 
-                We can be your project manager during the whole process to help you not only find the best solution but also 
-                implement it efficiently and effectively. Whether you have a system you hate or have never used an ATS before, 
-                we can work with you to find something you will be happy with for years to come.
-              </p>
-            </div>
+            <p className="text-justify">
+              Implementing and choosing a new applicant tracking system can be cumbersome, 
+              especially with so many options and functions to choose from. 
+              Our experience over the years has given us real-world insight into 
+              how these systems work and which ones will be best suited for your company's needs. 
+              We can be your project manager during the whole process to help you not only find the best solution but also 
+              implement it efficiently and effectively. Whether you have a system you hate or have never used an ATS before, 
+              we can work with you to find something you will be happy with for years to come.
+            </p>
           </div>
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-4 items-center">
+            <img src="/recruitment-support.svg" width="112" alt="" className="lg:w-28" />
             <h3 className="text-hidden-teal-dark text-center">Recruitment Support</h3>
-            <div className="grid lg:grid-cols-[auto_1fr] justify-items-center gap-4 lg:items-center lg:gap-16">
-              <img src="/recruitment-support.svg" width="48" alt="" className="lg:w-28" />
-              <p className="text-justify">
-                Need help with anything else? We are here to help. 
-                We provide one-off consultations to discuss other areas of hiring and recruitment that you have questions about. 
-                Contact us to see where else we can support you and your business as you expand your team.
-              </p>
-            </div>
+            <p className="text-justify">
+              Need help with anything else? We are here to help. 
+              We provide one-off consultations to discuss other areas of hiring and recruitment that you have questions about. 
+              Contact us to see where else we can support you and your business as you expand your team.
+            </p>
           </div>
           <Link href="/contact" className="bg-gradient-to-b from-[#11B0AC] to-[#03D8D4] hover:from-[#ffffff] hover:to-[#ffffff] hover:text-hidden-teal border border-[#0a0a0a] hover:border-hidden-teal text-center rounded-full py-5 uppercase font-semibold text-lg text-white px-12 md:w-fit mx-auto">
             Get Started

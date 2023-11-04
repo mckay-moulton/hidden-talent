@@ -405,7 +405,7 @@ export default function JobSeekersPage() {
         <div id="little-help" className="flex flex-col gap-4 md:gap-2 px-8">
           <h3 className="text-2xl md:text-3xl text-center md:text-start md:ml-8 md:pr-8 text-hidden-teal bg-white md:w-fit md:self-start md:mb-0 lg:-mb-0">A Little Help Goes a Long Way</h3>
           <div className="flex flex-col md:flex-row md:items-center max-w-7xl relative">
-          <img src="/little-help.svg" alt="" className="h-[250px] w-auto mx-auto order-2 md:order-1 md:h-full md:absolute md:scale-105 lg:scale-[115%] md:-right-28 lg:-right-20" />
+          <img src="/little-help.svg" alt="" className="relative h-[250px] -top-12 md:-top-0 w-auto mx-auto order-2 md:order-1 md:h-full md:absolute md:scale-105 lg:scale-[115%] md:-right-28 lg:-right-20" />
             {/* <img src="/little-help.svg" alt="" className="h-auto w-1/4 mx-auto md:w-[230px] lg:w-[230px] -mt-12 md:mt-0 md:-mr-12 lg:-mr-20 md:pb-0 lg:pb-0 z-10 order-2 md:order-2 md:absolute md:right-0" /> */}
             <p className="text-justify bg-hidden-teal p-4 py-8 pb-16 md:px-8 lg:px-16 md:pb-8 md:pr-48 lg:p-10 lg:py-16 lg:pr-48 rounded-[20px] text-white order-1">
               Hidden Talent can help you modernize your resume and stand out from the others in the candidate pool. 
@@ -476,7 +476,7 @@ export default function JobSeekersPage() {
           <h3 className="text-2xl md:text-3xl text-center md:text-start md:ml-8 md:pr-8 text-hidden-teal bg-white md:w-fit md:self-end md:mb-0 lg:-mb-0">Why Practice Matters</h3>
           <div className="flex flex-col md:flex-row md:items-center max-w-7xl relative">
             {/* <img src="https://media.hirehiddentalent.com/images/job-seekers-page-images/why-practice-matters" alt="" className="h-auto w-1/4 mx-auto md:w-[140px] lg:w-[140px] -mt-12 md:mt-0 md:-mr-12 lg:-mr-20 md:pb-0 lg:pb-0 z-10 order-2 md:order-1 md:absolute" /> */}
-            <img src="https://media.hirehiddentalent.com/images/job-seekers-page-images/why-practice-matters" alt="" className="h-[250px] w-auto mx-auto order-2 md:order-1 md:h-full md:absolute md:scale-105 lg:scale-[115%] md:-left-[2.5%] lg:left-0" />
+            <img src="https://media.hirehiddentalent.com/images/job-seekers-page-images/why-practice-matters" alt="" className="h-[250px] relative -top-12 md:-top-0 w-auto mx-auto order-2 md:order-1 md:h-full md:absolute md:scale-105 lg:scale-[115%] md:-left-[2.5%] lg:left-0" />
             <p className="text-justify bg-hidden-teal p-4 py-8 pb-16 md:px-8 md:pb-8 md:pl-40 lg:p-10 lg:py-16 lg:pl-48 lg:px-16 rounded-[20px] text-white order-1 md:order-2">
               Hidden Talent understands both sides of the interviewing process, giving prospective employees a unique advantage. 
               We can give you insight into what hiring managers are looking for and thinking so you can get into that headspace 
@@ -544,7 +544,7 @@ export default function JobSeekersPage() {
         <div id="who-you-know" className="flex flex-col gap-4 md:gap-2 px-8">
           <h3 className="text-2xl md:text-3xl text-center md:text-start md:ml-8 md:pr-8 text-hidden-teal bg-white md:w-fit md:self-start md:mb-0 lg:-mb-0">Who You Know Makes a Difference</h3>
           <div className="flex flex-col md:flex-row md:items-center max-w-7xl">
-            <img src="/who-you-know.svg" alt="" className="h-[250px] w-auto mx-auto order-2 md:order-1 md:h-full md:absolute md:scale-105 lg:scale-[115%] md:-right-12 lg:-right-4" />
+            <img src="/who-you-know.svg" alt="" className="h-[250px] w-auto mx-auto relative -top-12 md:-top-0 order-2 md:order-1 md:h-full md:absolute md:scale-105 lg:scale-[115%] md:-right-12 lg:-right-4" />
             {/* <img src="/who-you-know.svg" alt="" className="h-auto w-1/4 mx-auto md:w-[184px] lg:w-[180px] -mt-12 md:mt-0 md:-ml-12 lg:-ml-16 md:pb-0 lg:pb-0 z-10 order-2 md:order-2 md:absolute md:right-0" /> */}
             <p className="text-justify bg-hidden-teal p-4 py-8 pb-16 md:px-8 md:pb-8 md:pr-48 lg:p-10 lg:py-16 lg:pr-48 lg:px-16 rounded-[20px] text-white order-1 md:order-1">
               Hidden Talent understands how to use social media and digital networking effectively to grow your reach and opportunities. 
@@ -614,7 +614,7 @@ export default function JobSeekersPage() {
         <div id="approach" className="flex flex-col gap-4 md:gap-2 px-8">
           <h3 className="text-2xl md:text-3xl text-center md:text-start md:ml-8 md:pr-8 text-hidden-teal bg-white md:w-fit md:self-end md:mb-0 lg:mb-0">It's All in the Approach</h3>
           <div className="flex flex-col md:flex-row md:items-center max-w-7xl">
-            <img src="/approach.svg" alt="" className="h-[250px] w-auto mx-auto order-2 md:order-1 md:h-full md:absolute md:scale-80 lg:scale-[115%] md:-left-48 lg:-left-36" />
+            <img src="/approach.svg" alt="" className="h-[250px] w-auto mx-auto relative -top-12 md:-top-0 order-2 md:order-1 md:h-full md:absolute md:scale-80 lg:scale-[115%] md:-left-48 lg:-left-36" />
             {/* <img src="/approach.svg" alt="" className="h-auto w-1/2 mx-auto md:w-[275px] lg:w-[275px] -mt-12 md:mt-0 md:-mr-12 lg:-mr-32 md:pb-0 lg:pb-0 z-10 order-2 md:order-1 md:absolute md:-left-16" /> */}
             <p className="text-justify bg-hidden-teal p-4 py-8 pb-16 md:px-8 md:pb-8 md:pl-48 lg:p-10 lg:py-16 lg:pl-48 lg:px-16 rounded-[20px] text-white order-1 md:order-2">
               Hidden Talent understands how tricky or even uncomfortable it can be to navigate a job offer and ask for what you want out of your new position. 
