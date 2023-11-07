@@ -2,6 +2,7 @@ import { MongoClient } from "mongodb"
 import Link from "next/link"
 import Card from "./Card"
 import H1 from "./H1"
+import Description from "./Description"
 
 
 async function getJobListings() {
@@ -55,10 +56,15 @@ export default async function JobListingsPage() {
 
   return (
     <main className="px-4 py-8 md:py-12 lg:py-16 flex flex-col gap-8 items-center w-screen max-w-[100vw] overflow-x-clip">
-      <H1 />
-      {listings?.map(listing => (
-        <Card key={listing._id} listing={listing} />
-      ))}
+      <div className="flex flex-col gap-2">
+        <H1 />
+        <Description />
+      </div>
+      <div className="flex flex-col lg:flex-row gap-8 flex-wrap justify-center items-center w-full max-w-[1600px]">
+        {listings?.map(listing => (
+          <Card key={listing._id} listing={listing} />
+        ))}
+      </div>
     </main>
   )
 }

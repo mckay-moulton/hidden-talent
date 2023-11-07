@@ -336,8 +336,12 @@ export default function AboutPage() {
           </div>
           <p className="lg:max-w-[50ch] justify-self-center text-justify">
             At Hidden Talent, our mission is to help our clients discover and connect talented people to engaging and rewarding work by creating a white-glove experience 
-            through honesty, humility, and empathy. We seek to inspire a positive change in all things hiring and are actively working to make a positive impact within 
-            the industry. We know what we do affects people's lives and we don't take it for granted.
+            through honesty, humility, and empathy. 
+          </p>
+          <p className="lg:max-w-[50ch] justify-self-center text-justify">
+          {/* in all things hiring and are actively working to make a positive impact within  */}
+            {/* the industry. */}
+            We seek to inspire a positive change within the recruiting experience. We know what we do affects people's lives and we don't take it for granted.
           </p>
           <p className="lg:max-w-[50ch] justify-self-center text-justify">
             Founder Abel witnessed firsthand just how disconnected the recruiting industry has become and was saddened by the state of things. 

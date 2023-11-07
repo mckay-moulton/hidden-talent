@@ -14,14 +14,16 @@ export default function Hero({ listing }) {
     >
       <img src={listing.fields.company.fields.logo.url} alt="" width="150" />
       <h1 className="text-[44px] md:text-[48px] leading-tight text-center">{listing.fields.jobTitle}</h1>
-      <div className="flex flex-wrap justify-center gap-y-12 lg:justify-between items-end w-full max-w-2xl mx-auto p-8 mt-4">
+      <div className="flex flex-wrap justify-center gap-y-12 lg:justify-between items-end w-full max-w-4xl lg:gap-8 mx-auto p-8 mt-4">
         <p className="flex flex-col gap-2 items-center justify-between w-1/2 lg:w-fit"><img src="/building.svg" alt="" className="h-[32px] w-auto" />{listing.fields.company.fields.name}</p>
         <p className="flex flex-col gap-2 items-center justify-between w-1/2 lg:w-fit"><img src="/maps-and-flags.svg" alt="" className="h-[28px] w-auto" />{listing.fields.location}</p>
         <p className="flex flex-col gap-2 items-center justify-between w-1/2 lg:w-fit"><img src={listing.fields.jobType === 'Full-time' ? '/full-time.svg' : '/part-time.svg'} alt="" className="h-[32px] w-auto" />{listing.fields.jobType}</p>
         <p className="flex flex-col gap-2 items-center justify-between w-1/2 lg:w-fit">
           <img src="/money.svg" alt="" className="h-[32px] w-auto" />
-            ${compensation}
-          </p>
+          ${compensation}
+        </p>
+        <p className="flex flex-col gap-2 items-center justify-between w-1/2 lg:w-fit"><img src="/calendar.svg" alt="" className="h-[28px] w-auto" />{new Date(listing.fields.postedDate).toLocaleDateString()}</p>
+        <p className="flex flex-col gap-2 items-center justify-between w-1/2 lg:w-fit"><img src="/calendar-close.svg" alt="" className="h-[28px] w-auto" />{new Date(listing.fields.closeDate).toLocaleDateString()}</p>
       </div>
     </motion.div>
   )

@@ -389,7 +389,7 @@ export default function JobSeekersPage() {
           </div>
         </div>  
         <div id="set-the-stage-0" className="flex flex-col gap-4 md:gap-2 px-8">
-          <h3 className="text-2xl md:text-3xl text-center md:text-start md:ml-8 text-hidden-teal bg-white md:w-fit md:self-end lg:-mb-4 2xl:-mb-10">Set the Stage</h3>
+          <h3 className="text-2xl md:text-3xl text-center md:text-start md:ml-8 text-hidden-teal bg-white md:w-fit md:self-end lg:-mb-16 2xl:-mb-20 lg:mr-8">Set the Stage</h3>
           <div className="flex flex-col md:flex-row md:items-center max-w-7xl">
             <p className="text-justify border-2 border-hidden-teal p-4 py-8 md:px-8 pb-16 md:pb-8 md:pl-16 lg:p-10 lg:py-16 lg:pl-24 rounded-[20px] bg-white md:order-2">
               Resumes have long been a staple in the hiring process, but their purpose has morphed over the years. 
@@ -399,7 +399,7 @@ export default function JobSeekersPage() {
               After all, your resume is only viewed for less than 1 minute on average by a recruiter, 
               so it needs to quickly catch their attention and hold it long enough to showcase how well-suited you are for the position. 
             </p>
-            <img src="https://media.hirehiddentalent.com/images/job-seekers-page-images/set-the-stage-0" alt="" className="h-auto mx-auto w-5/6 md:w-[27%] lg:w-1/5 -mt-12 md:mt-0 md:-mr-12 z-50 " />
+            <img src="https://media.hirehiddentalent.com/images/job-seekers-page-images/set-the-stage-0" alt="" className="h-auto mx-auto w-5/6 md:w-[27%] lg:w-1/4 -mt-12 md:mt-0 md:-mr-12 z-50 " />
           </div>
         </div>
         <div id="little-help" className="flex flex-col gap-4 md:gap-2 px-8">
@@ -460,7 +460,7 @@ export default function JobSeekersPage() {
           </div>
         </div>  
         <div id="set-the-stage" className="flex flex-col gap-4 md:gap-0 px-8">
-          <h3 className="text-2xl md:text-3xl text-center md:text-start md:ml-8 text-hidden-teal bg-white md:w-fit md:self-start md:-mb-2 lg:-mb-11 2xl:-mb-12">Set the Stage</h3>
+          <h3 className="text-2xl md:text-3xl text-center md:text-start md:ml-8 text-hidden-teal bg-white md:w-fit md:self-start md:-mb-2 lg:-mb-[72px] 2xl:-mb-[84px]">Set the Stage</h3>
           <div className="flex flex-col md:flex-row md:items-center max-w-7xl">
             <p className="text-justify border-2 border-hidden-teal p-4 py-8 md:px-8 pb-16 md:pb-8 md:pr-16 lg:p-10 lg:py-16 lg:pr-24 rounded-[20px] bg-white">
               We've all been there in the lobby of an unfamiliar office with sweaty palms and our best outfit on, 
@@ -469,7 +469,7 @@ export default function JobSeekersPage() {
               With those stakes, it makes sense that you would feel pressured and anxious waiting to be interviewed,
                but with the right preparation, you can confidently step into any interview.
             </p>
-            <img src="https://media.hirehiddentalent.com/images/job-seekers-page-images/set-the-stage" alt="" className="h-auto mx-auto w-5/6 md:w-[27%] lg:w-1/5 -mt-12 md:mt-0 md:-ml-12" />
+            <img src="https://media.hirehiddentalent.com/images/job-seekers-page-images/set-the-stage" alt="" className="h-auto mx-auto w-5/6 md:w-[27%] lg:w-1/4 -mt-12 md:mt-0 md:-ml-12" />
           </div>
         </div>
         <div id="why-practice-matters" className="flex flex-col gap-4 md:gap-2 px-8">
@@ -529,7 +529,7 @@ export default function JobSeekersPage() {
           </div>
         </div>  
         <div id="build-new-connections" className="flex flex-col gap-4 md:gap-2 px-8">
-          <h3 className="text-2xl md:text-3xl text-center md:text-start md:ml-8 text-hidden-teal bg-white md:w-fit md:self-end md:-mb-3 lg:-mb-10 2xl:-mb-12">Build New Connections</h3>
+          <h3 className="text-2xl md:text-3xl text-center md:text-start md:ml-8 text-hidden-teal bg-white md:w-fit md:self-end md:-mb-3 lg:-mb-[70px] lg:mr-8 2xl:-mb-20">Build New Connections</h3>
           <div className="flex flex-col md:flex-row md:items-center max-w-7xl">
             <p className="text-justify border-2 border-hidden-teal p-4 py-8 md:px-8 pb-16 md:pb-8 md:pl-16 lg:p-10 lg:py-16 lg:pl-24 rounded-[20px] bg-white md:order-2">
               We've all been there in the lobby of an unfamiliar office with sweaty palms and our best outfit on, 
@@ -538,7 +538,7 @@ export default function JobSeekersPage() {
               With those stakes, it makes sense that you would feel pressured and anxious waiting to be interviewed,
                but with the right preparation, you can confidently step into any interview.
             </p>
-            <img src="https://media.hirehiddentalent.com/images/job-seekers-page-images/build-new-connections" alt="" className="h-auto mx-auto w-5/6 md:w-[27%] lg:w-1/5 -mt-12 md:mt-0 md:-mr-12  z-10" />
+            <img src="https://media.hirehiddentalent.com/images/job-seekers-page-images/build-new-connections" alt="" className="h-auto mx-auto w-5/6 md:w-[27%] lg:w-1/4 -mt-12 md:mt-0 md:-mr-12  z-10" />
           </div>
         </div>
         <div id="who-you-know" className="flex flex-col gap-4 md:gap-2 px-8">
@@ -597,7 +597,7 @@ export default function JobSeekersPage() {
           </div>
         </div>  
         <div id="establish-your-terms" className="flex flex-col gap-4 md:gap-2 px-8">
-          <h3 className="text-2xl md:text-3xl text-center md:text-start md:ml-8 text-hidden-teal bg-white md:w-fit md:self-start lg:-mb-4 2xl:-mb-11">Establish Your Terms</h3>
+          <h3 className="text-2xl md:text-3xl text-center md:text-start md:ml-8 text-hidden-teal bg-white md:w-fit md:self-start lg:-mb-16 2xl:-mb-20">Establish Your Terms</h3>
           <div className="flex flex-col md:flex-row md:items-center max-w-7xl">
             <p className="text-justify border-2 border-hidden-teal p-4 py-8 md:px-8 pb-16 md:pb-8 md:pr-16 lg:p-10 lg:py-16 lg:pr-24 rounded-[20px] bg-white">
               The call finally comes in: you got the job.
@@ -608,7 +608,7 @@ export default function JobSeekersPage() {
               While this isn't a bad thing, you are almost certainly underestimating the leverage and value you 
               have as a newcomer to the company and will ultimately sell yourself short with this mindset.
             </p>
-            <img src="https://media.hirehiddentalent.com/images/job-seekers-page-images/establish-your-terms" alt="" className="h-auto mx-auto w-5/6 md:w-[27%] lg:w-1/5 -mt-12 md:mt-0 md:-ml-12  z-10" />
+            <img src="https://media.hirehiddentalent.com/images/job-seekers-page-images/establish-your-terms" alt="" className="h-auto mx-auto w-5/6 md:w-[27%] lg:w-1/4 -mt-12 md:mt-0 md:-ml-12  z-10" />
           </div>
         </div>
         <div id="approach" className="flex flex-col gap-4 md:gap-2 px-8">

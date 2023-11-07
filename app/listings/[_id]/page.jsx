@@ -3,6 +3,7 @@ import RichText from "@/app/RichText"
 import { MongoClient, ObjectId } from "mongodb"
 import Hero from "./Hero"
 import { Suspense } from "react"
+import ApplyButton from "./ApplyButton"
 
 async function getListing(_id) {
   const mongo = new MongoClient(process.env.MONGO_URI)
@@ -37,13 +38,15 @@ export default async function ListingPage({ params }) {
   const listing = await getListing(params._id)
 
   return (
-    <main className="px-4 py-8 md:px-8 flex flex-col justify-center items-center w-screen max-w-[100vw] overflow-x-clip">
+    <main className="px-4 py-8 md:px-8 flex flex-col gap-8 justify-center items-center w-screen max-w-[100vw] overflow-x-clip">
       <head>
         <title>{listing.fields.jobTitle}</title>
       </head>
       <Suspense fallback={<span className="text-[29px] md:text-[42px] flex items-center">Loading... <img src="loading.svg" alt="" width="32" className="animate-spin" /></span>}>
         <Hero listing={listing} />
-        <RichText src={listing.fields.jobAnnouncement} className="flex flex-col gap-2 items-start max-w-4xl mx-auto" /> 
+        <ApplyButton link={listing.jobUrl || ''} />
+        <RichText src={listing.fields.jobAnnouncement} className="flex flex-col gap-2 items-start max-w-[90ch] mx-auto" /> 
+        <ApplyButton link={listing.jobUrl || ''} />
       </Suspense>
     </main>
   )

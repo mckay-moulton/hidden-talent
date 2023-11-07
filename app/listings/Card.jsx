@@ -14,16 +14,21 @@ export default function Card({ listing }) {
     >
       <div className="flex justify-center gap-8 items-center">
         <img src={listing.fields.company.fields.logo.url} alt="" width="108" />
-        <div className="flex flex-col justify-evenly h-full">
+        <div className="flex flex-col gap-2">
           <span className="flex items-center gap-2"><img src="building.svg" alt="" width="28" className="" />{listing.fields.company.fields.name}</span>
           <span className="flex items-center gap-2 leading-none"><img src="maps-and-flags.svg" alt="" width="28" className="" />{listing.fields.location}</span>
         </div>
       </div>
       <hr className="border-0.5 border-hidden-teal w-full opacity-50" />
       <h2 className="text-2xl md:text-[29px] text-center leading-tight">{listing.fields.jobTitle}</h2>
+      
       <div className="flex justify-evenly w-full">
         <p className="flex items-center gap-2"><img src={listing.fields.jobType === 'Full-time' ? 'full-time.svg' : 'part-time.svg'} alt="" width="28" />{listing.fields.jobType}</p>
         <p className="flex items-center gap-2"><img src="money.svg" alt="" width="32" />${Number(listing.fields.compensation).toLocaleString('en-US')}</p>
+      </div>
+      <div className="flex justify-evenly w-full">
+        <p className="flex items-center gap-2"><img src="calendar.svg" alt="" width="28" />{new Date(listing.fields.postedDate).toLocaleDateString()}</p>
+        <p className="flex items-center gap-2"><img src="calendar-close.svg" alt="" width="32" />{new Date(listing.fields.closeDate).toLocaleDateString()}</p>
       </div>
       <Link
         href={`/listings/${listing._id}`}

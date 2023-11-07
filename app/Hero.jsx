@@ -34,7 +34,7 @@ export default function HeroSection() {
       >
         <img 
           src="https://media.hirehiddentalent.com/images/homepage-images/hero-image"
-          className="relative scale-[120%] lg:scale-[160%] -left-2 lg:w-1/3 lg:order-2"
+          className="relative scale-[120%] lg:scale-[200%] 2xl:scale-[160%] -left-2 lg:w-1/3 lg:order-2"
         />
         <div className="flex flex-col gap-8 md:gap-12">
           <div className="flex flex-col gap-1">
