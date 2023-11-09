@@ -15,7 +15,14 @@ export default function Card({ listing }) {
       <div className="flex justify-center gap-8 items-center">
         <img src={listing.fields.company.fields.logo.url} alt="" width="108" />
         <div className="flex flex-col gap-2">
-          <span className="flex items-center gap-2"><img src="building.svg" alt="" width="28" className="" />{listing.fields.company.fields.name}</span>
+          <span className="flex items-center content-center gap-2">
+            <img src="building.svg" alt="" width="28" className="" />
+            
+            <Link href={listing.fields.company.fields.website || '/'} target="_blank" className="flex items-center justify-start gap-2">
+              <span className="w-fit max-w-[10ch]">{listing.fields.company.fields.name}</span>
+              <img src="/external-link.svg" alt="company website" width="16" />
+            </Link>
+            </span>
           <span className="flex items-center gap-2 leading-none"><img src="maps-and-flags.svg" alt="" width="28" className="" />{listing.fields.location}</span>
         </div>
       </div>

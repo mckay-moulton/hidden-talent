@@ -12,14 +12,20 @@ export default function RichText({ src, maxWidth = '', className }) {
     console.log('rich text src', nodes)
   }, [src, nodes])
   return (
-    <div className={className}>
+    <motion.div 
+      className={className}
+      initial={{ opacity: 0, y: 200 }} 
+      whileInView={{ opacity: 1, y: 0 }} 
+      viewport={{ once: true }} 
+      transition={{ duration: 0.35 }}
+    >
       {nodes.map((node, index) => {
         const { type, image, children } = node
         if (type === 'h1') {
           if (children.length === 1 && children[0].text === '') return null
 
           return (
-            <motion.h1
+            <h1
               initial={{ opacity: 0, y: 200 }} 
               whileInView={{ opacity: 1, y: 0 }} 
               viewport={{ once: true }} 
@@ -27,13 +33,13 @@ export default function RichText({ src, maxWidth = '', className }) {
               className="text-[29px] md:text-[42px] w-full text-center mt-8"
             >
                 {children.map(childNode => <>{childNode.text}</>)}
-              </motion.h1>
+              </h1>
           )
         }
 
         if (type === 'h2') {
           return (
-            <motion.h2
+            <h2
               initial={{ opacity: 0, y: 200 }} 
               whileInView={{ opacity: 1, y: 0 }} 
               viewport={{ once: true }} 
@@ -41,12 +47,12 @@ export default function RichText({ src, maxWidth = '', className }) {
               className="text-[29px] md:text-[42px] w-full text-center mt-8"
             >
               {children.map(childNode => <>{childNode.text}</>)}
-            </motion.h2>
+            </h2>
             )
         }
         if (type === 'h3') {
           return (
-            <motion.h3
+            <h3
               initial={{ opacity: 0, y: 200 }} 
               whileInView={{ opacity: 1, y: 0 }} 
               viewport={{ once: true }} 
@@ -54,7 +60,7 @@ export default function RichText({ src, maxWidth = '', className }) {
               className="text-xl md:text-2xl w-full mt-8"
             >
               {children.map(childNode => <>{childNode.text}</>)}
-            </motion.h3>
+            </h3>
             )
         }
 
@@ -62,7 +68,7 @@ export default function RichText({ src, maxWidth = '', className }) {
           if (children.length === 1 && children[0].text === '') return null
 
           return (
-            <motion.p
+            <p
               initial={{ opacity: 0, y: 200 }} 
               whileInView={{ opacity: 1, y: 0 }} 
               viewport={{ once: true }} 
@@ -70,23 +76,23 @@ export default function RichText({ src, maxWidth = '', className }) {
               key={`node_${index}`} className="text-justify"
             >
               {children.map((childNode, childNodeIndex) => <span key={`node_${index}_childNode_${childNodeIndex}`}>{childNode.text}</span>)}
-            </motion.p>
+            </p>
           )
         }
 
         if (type === 'image') {
           return (
-            <motion.picture
+            <picture
               initial={{ opacity: 0, y: 200 }} 
               whileInView={{ opacity: 1, y: 0 }} 
               viewport={{ once: true }} 
               transition={{ duration: 0.35 }}
             >
               <img src={image.url} alt={image.description} width={image.width} height={image.height} className="max-w-full rounded-md" />
-            </motion.picture>
+            </picture>
           )
         }
       })}
-    </div>
+    </motion.div>
   )
 }

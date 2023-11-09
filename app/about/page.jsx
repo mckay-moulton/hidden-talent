@@ -4,6 +4,7 @@ import gsap from "gsap";
 import _ScrollTrigger from "gsap/ScrollTrigger";
 import { useEffect } from "react";
 import Quote from "../Quote";
+import Link from "next/link";
 
 export default function AboutPage() {
   useEffect(() => {
@@ -331,18 +332,21 @@ export default function AboutPage() {
         <div id="hero" className="bg-white px-4 py-24 md:px-8 rounded-[20px] grid gap-4 relative">
           <h1 className="bg-white bg-opacity-25 backdrop-blur-[1px] rounded-[6px] text-[29px] md:text-[42px] text-center z-10 lg:bg-opacity-0">Why We're Different</h1>
           <div className="flex">
-            <img  src="https://media.hirehiddentalent.com/images/about-page-images/about-hero-image-1" alt="" className="absolute w-1/3 md:w-1/5 lg:w-[12vw] -top-12 -left-8 md:-left-4 lg:-top-[6vw] lg:-left-[6vw] z-0" />
-            <img src="https://media.hirehiddentalent.com/images/about-page-images/about-hero-image-2" alt="" className="absolute w-1/3 md:w-1/5 lg:w-[12vw] -bottom-12 -right-8 md:-bottom-16 md:-right-8 lg:-right-[6vw] lg:-bottom-[6vw] z-0" />
+            <img  src="https://media.hirehiddentalent.com/images/about-page-images/about-hero-image-1" alt="" className="absolute w-1/3 md:w-1/5 lg:w-[12vw] 2xl:w-[15vw] -top-12 -left-8 md:-left-4 lg:-top-[6vw] lg:-left-[6vw] 2xl:-left-[7.5vw] z-0" />
+            <img src="https://media.hirehiddentalent.com/images/about-page-images/about-hero-image-2" alt="" className="absolute w-1/3 md:w-1/5 lg:w-[12vw] 2xl:w-[15vw] -bottom-12 -right-8 md:-bottom-16 md:-right-8 lg:-right-[6vw] 2xl:-right-[7.5vw] lg:-bottom-[6vw] z-0" />
           </div>
+          <h2 className="text-2xl lg:text-3xl text-center">Our <span className="text-hidden-teal">Mission</span></h2>
           <p className="lg:max-w-[50ch] justify-self-center text-justify">
             At Hidden Talent, our mission is to help our clients discover and connect talented people to engaging and rewarding work by creating a white-glove experience 
             through honesty, humility, and empathy. 
           </p>
+          <h2 className="text-2xl lg:text-3xl text-center">Our <span className="text-hidden-teal">Vision</span></h2>
           <p className="lg:max-w-[50ch] justify-self-center text-justify">
           {/* in all things hiring and are actively working to make a positive impact within  */}
             {/* the industry. */}
             We seek to inspire a positive change within the recruiting experience. We know what we do affects people's lives and we don't take it for granted.
           </p>
+          <h2 className="text-2xl lg:text-3xl text-center">Our <span className="text-hidden-teal">History</span></h2>
           <p className="lg:max-w-[50ch] justify-self-center text-justify">
             Founder Abel witnessed firsthand just how disconnected the recruiting industry has become and was saddened by the state of things. 
             He knew there was a better way to go about this process, and after many years in the industry, he decided to branch out on his own. 
@@ -480,6 +484,9 @@ export default function AboutPage() {
         </div>
         <div className="px-6 py-16 lg:py-24 lg:px-8 grid gap-8">
           <div id="meet-abel-1" className="grid md:max-w-lg lg:max-w-7xl lg:grid-cols-[5fr_9fr] mx-auto">
+            <Link href="https://www.linkedin.com/in/abeljohnson14/" target="_blank" className="absolute top-2 left-2 md:top-4 md:left-4 lg:left-12 z-50 bg-white bg-opacity-50 rounded">
+              <img src="/icon_linkedin.svg" alt="Abel's LinkedIn" />
+            </Link>
             <img 
               src="https://media.hirehiddentalent.com/images/about-page-images/abel-about-1" 
               alt="" 
