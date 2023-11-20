@@ -4,6 +4,7 @@ import Card from "./Card"
 import H1 from "./H1"
 import Description from "./Description"
 
+export const revalidate = 60
 
 async function getJobListings() {
   const mongo = new MongoClient(process.env.MONGO_URI)
