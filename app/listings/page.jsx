@@ -52,16 +52,37 @@ import Description from "./Description"
 async function getJobListings() {
   let jobListings = []
 
-  await fetch(`${process.env.BASE_URL}/api/listings`, { next: { revalidate: 60 }})
+  await fetch(`https://admin.hirehiddentalent.com/api/job-listings?populate=true`, { next: { revalidate: 60 }})
   .then(response => response.json())
-  .then(response => {
+  .then(async response => {
     if (response.error_message) return
 
-    jobListings = response.jobListings
+    jobListings = [...response]
   })
   .catch(error => console.error(error))
 
+  async function mapListings() {
+    jobListings.map(async listing => {
+      let company = await getCompany(listing.fields.company)
+
+      listing.fields.company = company
+    })
+  }
+
+  await mapListings()
+
   return jobListings
+}
+
+async function getCompany(id) {
+  let company = {}
+
+  await fetch(`https://admin.hirehiddentalent.com/api/companies/${id}`)
+  .then(response => response.json())
+  .then(response => {company = response})
+  .catch(error => console.error(error))
+
+  return company
 }
 
 export default async function JobListingsPage() {
