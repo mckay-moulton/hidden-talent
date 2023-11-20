@@ -50,7 +50,12 @@ import Description from "./Description"
 // }
 
 async function getJobListings() {
+  let companies = []
   let jobListings = []
+
+  await fetch(`https://admin.hirehiddentalent.com/api/companies?populate=true`, { next: { revalidate: 60 }})
+  .then(response => response.json())
+  .then(response => { companies = [...response]})
 
   await fetch(`https://admin.hirehiddentalent.com/api/job-listings?populate=true`, { next: { revalidate: 60 }})
   .then(response => response.json())
@@ -61,18 +66,23 @@ async function getJobListings() {
   })
   .catch(error => console.error(error))
 
-  async function mapListings() {
-    jobListings.map(async listing => {
-      let company = await getCompany(listing.fields.company)
+  // async function mapListings() {
+  //   jobListings.map(async listing => {
+  //     let company = await getCompany(listing.fields.company)
 
-      listing.fields.company = company
-    })
-  }
+  //     listing.fields.company = company
+  //   })
+  // }
 
-  await mapListings()
+  // await mapListings()
+
+  jobListings.forEach((listing, index) => {
+    jobListings[index].fields.company = companies.find(company => company._id === listing.fields.company)
+  })
 
   return jobListings
 }
+
 
 async function getCompany(id) {
   let company = {}
