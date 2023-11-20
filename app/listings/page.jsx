@@ -49,6 +49,8 @@ import Description from "./Description"
 //   return {}
 // }
 
+export const dynamic = 'force-dynamic'
+
 async function getJobListings() {
   let companies = []
   let jobListings = []
