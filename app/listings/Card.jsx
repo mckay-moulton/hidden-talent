@@ -19,7 +19,7 @@ export default function Card({ listing }) {
             <img src="building.svg" alt="" width="28" className="" />
             
             <Link href={listing.fields.company?.fields?.website || '/'} target="_blank" className="flex items-center justify-start gap-2">
-              <span className="w-fit max-w-[10ch]">{listing.fields.company.fields.name}</span>
+              <span className="w-fit max-w-[10ch]">{listing.fields.company?.fields?.name}</span>
               <img src="/external-link.svg" alt="company website" width="16" />
             </Link>
             </span>
