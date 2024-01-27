@@ -845,7 +845,7 @@ export default function EmployersPage() {
                 <h3 className="text-center">
                   Step 11:
                   <br />
-                  Conduct Background Check (Additional Fee)
+                  Conduct Background Check
                 </h3>
                 <p className="text-justify">
                   Now that you have a great new candidate ready to join your team, 

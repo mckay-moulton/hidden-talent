@@ -1,53 +1,6 @@
-import { MongoClient } from "mongodb"
-import Link from "next/link"
 import Card from "./Card"
 import H1 from "./H1"
 import Description from "./Description"
-
-// export const revalidate = 60
-
-// async function getJobListings() {
-//   const mongo = new MongoClient(process.env.MONGO_URI)
-//   let jobListings = []
-//   let companies = []
-
-//   try {
-//     await mongo.connect()
-//     const client = mongo.db('VarialCMS')
-    
-//     const contentModels = await client.collection('content_models')
-//     const contents = await client.collection('contents')
-    
-//     const companyModel = await contentModels.findOne({ 'name.plural': 'companies' })
-//     await contents.find({ contentModel: companyModel._id }).forEach(company => companies.push(company))
-    
-//     const jobListingModel = await contentModels.findOne({ 'name.plural': 'job-listings' })
-//     await contents.find({ contentModel: jobListingModel._id }).forEach(listing => jobListings.push(listing))
-
-//     await jobListings.forEach(listing => {
-//       let company = {}
-      
-//       companies.forEach(c => {
-//         if (c._id.toString() === listing.fields.company) {
-//           company = c
-//         }
-//       })
-
-//       listing.fields = {
-//         ...listing.fields,
-//         company: { ...company }
-//       }
-//     })
-
-//     await mongo.close()
-    
-//     return jobListings
-//   } catch (error) {
-//     console.error('Mongo Server error', error)
-//   }
-
-//   return {}
-// }
 
 export const dynamic = 'force-dynamic'
 
@@ -68,33 +21,11 @@ async function getJobListings() {
   })
   .catch(error => console.error(error))
 
-  // async function mapListings() {
-  //   jobListings.map(async listing => {
-  //     let company = await getCompany(listing.fields.company)
-
-  //     listing.fields.company = company
-  //   })
-  // }
-
-  // await mapListings()
-
   jobListings.forEach((listing, index) => {
     jobListings[index].fields.company = companies.find(company => company._id === listing.fields.company)
   })
 
   return jobListings
-}
-
-
-async function getCompany(id) {
-  let company = {}
-
-  await fetch(`https://admin.hirehiddentalent.com/api/companies/${id}`)
-  .then(response => response.json())
-  .then(response => {company = response})
-  .catch(error => console.error(error))
-
-  return company
 }
 
 export default async function JobListingsPage() {
