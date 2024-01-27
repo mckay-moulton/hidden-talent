@@ -518,6 +518,30 @@ export default function JobSeekersPage() {
       opacity: 1,
       y: 0,
     })
+    
+    gsap.from('#consult-h2', {
+      scrollTrigger: '#consult-h2',
+      opacity: 0,
+      y: 200,
+      duration: 0.35,
+    })
+    gsap.to('#consult-h2', {
+      scrollTrigger: '#consult-h2',
+      opacity: 1,
+      y: 0,
+    })
+    
+    gsap.from('#consult-link', {
+      scrollTrigger: '#consult-link',
+      opacity: 0,
+      y: 200,
+      duration: 0.35,
+    })
+    gsap.to('#consult-link', {
+      scrollTrigger: '#consult-link',
+      opacity: 1,
+      y: 0,
+    })
   }, [])
 
   return (
@@ -885,11 +909,11 @@ export default function JobSeekersPage() {
         </div>
       </section>
       <section className="px-4 py-8 md:px-8 lg:py-16 grid justify-center justify-items-center gap-6 sm:gap-12 max-w-[1536px] mx-auto">
-        <h2 className="text-center text-[29px] md:text-[42px]">
+        <h2 id="consult-h2" className="text-center text-[29px] md:text-[42px]">
           Unsure where to start or what you need most? <br />
           Schedule a <span className="text-hidden-teal">FREE</span> 15 minute consult with us!
         </h2>
-        <Link href="/contact"  className="bg-gradient-to-b from-[#11B0AC] to-[#03D8D4] hover:from-[#ffffff] hover:to-[#ffffff] hover:text-hidden-teal border border-white hover:border-hidden-teal text-center rounded-full py-5 uppercase font-semibold text-lg text-white px-12">
+        <Link id="consult-link" href="/contact"  className="bg-gradient-to-b from-[#11B0AC] to-[#03D8D4] hover:from-[#ffffff] hover:to-[#ffffff] hover:text-hidden-teal border border-white hover:border-hidden-teal text-center rounded-full py-5 uppercase font-semibold text-lg text-white px-12">
           Schedule Consult
         </Link>
       </section>
