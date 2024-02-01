@@ -42,12 +42,33 @@ export default function ContactForm({ id }) {
       console.error(error)
       setSending(false)
     })
+
+    // console.log('resume', resume.value)
+
+    // const formData = new FormData(event.currentTarget)
+
+    // fetch('/api/contact', {
+    //   method: 'POST',
+    //   body: formData,
+    //   // headers: {
+    //   //   'Content-Type': 'multipart/form-data',
+    //   // },
+    //   // body: JSON.stringify({
+    //   //   resume: resume.value,
+    //   // })
+    // })
+    // .then(response => response.json())
+    // .then(response => {
+    //   console.log('response', response)
+    // })
+    // .catch(error => console.error('error'))
   }
 
   return (
     <form
       id={id}
       onSubmit={handleSubmit}
+      // enctype="multipart/form-data"
       className="bg-[#0a0a0a] text-white w-full max-w-3xl p-4 py-8 md:p-8 rounded-[20px] text-lg flex flex-col gap-5"
     >
       <h2 className="text-[29px] md:text-[42px] text-center leading-tight"><span className="text-hidden-teal-dark">Change</span> the Way <br className="md:hidden" /> You Hire</h2>
@@ -107,6 +128,15 @@ export default function ContactForm({ id }) {
           rows="4"
         />
       </div>
+      {/* <div className="flex flex-col gap-1">
+        <label htmlFor="details">Resume</label>
+        <input
+          id="resume"
+          name="resume"
+          type="file"
+          className="bg-zinc-900 w-fit"
+        />
+      </div> */}
       <button
         disabled={sending || sent}
         className="group mt-1.5 bg-gradient-to-b from-[#11B0AC] to-[#03D8D4] hover:from-[#ffffff] hover:to-[#ffffff] hover:text-hidden-teal disabled:from-[hsl(179,30%,53%)] disabled:to-[hsl(179,30%,56%)] disabled:hover:text-white border disabled:hover:border-[#0a0a0a] border-[#0a0a0a] hover:border-hidden-teal text-center rounded-full py-5 uppercase font-semibold text-lg text-white px-12 w-full md:w-fit mx-auto"
