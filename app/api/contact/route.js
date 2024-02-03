@@ -61,7 +61,7 @@ export async function GET() {
 
 
 export async function POST(request) {
-  const { name, city, email, phone, inquiry,  details } = await request.json()
+  const { name, city, email, phone, inquiry, service, heardAbout, details } = await request.json()
   // console.log('request', name, city, email, phone, inquiry, jobTitle, minPay, maxPay, timelineStart, timelineEnd, fieldType, desiredRole, details)
 
   const DOMAIN = process.env.MG_DOMAIN
@@ -85,6 +85,14 @@ export async function POST(request) {
     `
   }
 
+  const packageName = () => {
+    if (service === 'black') return 'Black Diamond'
+    if (service === 'sapphire') return 'Sapphire'
+    if (service === 'emerald') return 'Emerald'
+
+    return 'Keep me in mind for job opportunities'
+  }
+
   const staffEmail = {
     from: `Hidden Talent <${process.env.MAIL_FROM}>`,
     to: process.env.MAIL_TO,
@@ -96,6 +104,8 @@ export async function POST(request) {
         <p>Email: ${email}</p>
         <p>Phone: ${phone}</p>
         <p>Inquiry Type: ${inquiry}</p>
+        ${inquiry === 'job' && `<p>Which package are you interested in?: ${packageName()}</p>`}
+        <p>How did you hear about us?: ${heardAbout}</p>
         <p>Details: ${details}</p>
       `
   }

@@ -33,7 +33,7 @@ export default function TestimonialSection() {
             author="Troy Butzlaff, CEO/President, Anthenian Partners"
             style="lg:row-span-2 lg:self-center"
             icon={
-              <img src="/testimonial-man-1.svg" alt="" height="200" className="absolute md:bottom-4 -left-16 w-auto h-[400px] md:h-[400px] md:-left-[80px] top-[calc(50%-200px)]" />
+              <img src="/testimonial-man-1.svg" alt="" height="200" className="absolute md:bottom-4 -left-[72px] w-auto h-[400px] md:h-[400px] md:-left-[80px] top-[calc(50%-200px)]" />
             }
           />
           <Testimonial 
@@ -46,7 +46,7 @@ export default function TestimonialSection() {
             author="David Jeppson, Co-Founder, BestDayHR"
             style="lg:col-start-2 lg:col-end-2 lg:row-start-1 lg:row-end-1 lg:self-end"
             icon={
-              <img src="/testimonial-man-2.svg" alt="" height="200" className="absolute  -left-16 w-auto h-[400px] md:h-[440px] md:-left-[90px] top-[calc(50%-220px)] " />
+              <img src="/testimonial-man-2.svg" alt="" height="200" className="absolute -left-16 w-auto h-[400px] md:h-[440px] md:-left-[90px] top-[calc(50%-220px)] " />
             }
           />
           <Testimonial 
@@ -55,7 +55,7 @@ export default function TestimonialSection() {
             author="Kathy Figueredo, Board President, Elmore Cty Domestic Violence Council"
             style="lg:col-start-2 lg:col-end-2 lg:row-start-2 lg:row-end-2"
             icon={
-              <img src="/employer-testimonial-woman-2.svg" alt="" height="230" className="absolute md:bottom-4 -left-[102px] w-auto h-[400px] md:h-[400px] md:-left-[120px] top-[calc(50%-200px)]" />
+              <img src="/employer-testimonial-woman-2.svg" alt="" height="230" className="absolute md:bottom-4 -left-[106px] w-auto h-[400px] md:h-[400px] md:-left-[120px] top-[calc(50%-200px)]" />
             }
           />
         </div>
@@ -84,7 +84,7 @@ function Testimonial({ quote, author, icon = <></>, style = "" }) {
       className={`relative border-2 border-hidden-teal p-8 rounded-[20px] grid gap-4 grid-rows-[1fr_auto] justify-end items-center font-light md:max-w-[430px] lg:w-full pl-16 md:pl-12 md:pr-12  h-fit ${style}`}
     >
       {icon}
-      <p className="text-justify leading-relaxed self-center text-hidden-teal">“{quote}”</p>
+      <p className="text-left leading-relaxed self-center text-hidden-teal">“{quote}”</p>
       <p className="italic text-end text-hidden-teal">{author}</p>
     </motion.div>
   )
@@ -101,7 +101,7 @@ function TestimonialAlt({ quote, author, icon = <></>, style = "" }) {
     >
       <div className="p-4 pl-8 flex flex-col gap-4 border-2 rounded-[20px]">
         {icon}
-        <p className="text-justify leading-relaxed self-center">“{quote}”</p>
+        <p className="text-left leading-relaxed self-center">“{quote}”</p>
         <p className="italic text-end">{author}</p>
       </div>
     </motion.div>
