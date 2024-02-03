@@ -84,7 +84,7 @@ function Testimonial({ quote, author, icon = <></>, style = "" }) {
       className={`relative border-2 border-hidden-teal p-8 rounded-[20px] grid gap-4 grid-rows-[1fr_auto] justify-end items-center font-light md:max-w-[430px] lg:w-full pl-16 md:pl-12 md:pr-12  h-fit ${style}`}
     >
       {icon}
-      <p className="text-left leading-relaxed self-center text-hidden-teal">“{quote}”</p>
+      <p className="text-center leading-relaxed self-center text-hidden-teal">“{quote}”</p>
       <p className="italic text-end text-hidden-teal">{author}</p>
     </motion.div>
   )
@@ -101,7 +101,7 @@ function TestimonialAlt({ quote, author, icon = <></>, style = "" }) {
     >
       <div className="p-4 pl-8 flex flex-col gap-4 border-2 rounded-[20px]">
         {icon}
-        <p className="text-left leading-relaxed self-center">“{quote}”</p>
+        <p className="text-center leading-relaxed self-center">“{quote}”</p>
         <p className="italic text-end">{author}</p>
       </div>
     </motion.div>

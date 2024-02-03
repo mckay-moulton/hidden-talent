@@ -866,7 +866,7 @@ export default function JobSeekersPage() {
         <div id="testimonial-1" className="p-2.5 border-2 border-hidden-teal rounded-[20px] relative max-w-[450px] w-full">
           <img src="/employer-testimonial-man-1.svg"  alt="" width="116" className="absolute -left-[70px] top-[calc(50%-200px)]" />
           <div className="p-12 grid gap-2.5 text-hidden-teal border-2 rounded-[20px] border-hidden">
-            <p className="text-lg leading-normal text-justify">
+            <p className="text-lg leading-normal text-center">
               Abel provided great counsel and professional advice to me, including assisting me in improving my resume, 
               providing excellent interviewing tips, and sharing various professional resources to ensure success and build up my confidence. 
               Thanks to Abel's top-tier quality service, I was able to secure a job offer within weeks and I would highly recommend anyone reading this to reach out to him. 
@@ -878,9 +878,9 @@ export default function JobSeekersPage() {
           </div>
         </div>
         <div id="testimonial-2" className="p-2.5 border-2 border-hidden-teal bg-hidden-teal rounded-[20px] relative max-w-[450px]">
-          <img src="/employer-testimonial-woman-1.svg"  alt="" width="185" className="absolute -left-[115px] md:-left-[130px] top-[calc(50%-200px)]" />
+          <img src="/employer-testimonial-woman-1.svg"  alt="" width="185" className="absolute -left-[128px] md:-left-[130px] top-[calc(50%-200px)]" />
           <div className="p-12 grid gap-2.5 text-white border-2 rounded-[20px] border-white">
-            <p className="text-lg leading-normal text-center md:text-justify">
+            <p className="text-lg leading-normal text-center">
               From the very beginning, Abel's dedication to providing top-notch service was evident. 
               He possesses a remarkable level of expertise and a genuine commitment to helping others. 
               His guidance and support were instrumental in navigating through various challenges, and his positive attitude made the entire process enjoyable. 
@@ -893,9 +893,9 @@ export default function JobSeekersPage() {
           </div>
         </div>
         <div id="testimonial-1" className="p-2.5 border-2 border-hidden-teal rounded-[20px] relative max-w-[450px]">
-          <img src="/employer-testimonial-woman-2.svg"  alt="" width="164" className="absolute -left-[90px] md:-left-[110px] top-[calc(50%-200px)]" />
+          <img src="/employer-testimonial-woman-2.svg"  alt="" width="164" className="absolute -left-[106px] md:-left-[110px] top-[calc(50%-200px)]" />
           <div className="p-12 grid gap-2.5 text-hidden-teal border-2 rounded-[20px] border-hidden">
-            <p className="text-lg leading-normal text-center md:text-justify">
+            <p className="text-lg leading-normal text-center">
               Abel is a goldmine of information! Not only can he provide general guidelines and strategies for finding a job, 
               he really digs deep to discover your true interests and potential to help you find a career and position that will align with you. 
               He was very patient and thorough when reviewing my resume to ensure I had everything covered while keeping it concise and engaging. 
