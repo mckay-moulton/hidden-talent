@@ -38,7 +38,7 @@ export default function HeroSection() {
         />
         <div className="flex flex-col gap-8 md:gap-12">
           <div className="flex flex-col gap-1">
-            <p className='text-[32px] font-bold text-center md:text-5xl 2xl:text-6xl !leading-tight lg:!leading-[1.15] tracking-[0.0125em]'>Creating a better world of recruiting</p>
+            <p className='text-[32px] font-bold text-center md:text-5xl 2xl:text-6xl !leading-tight lg:!leading-[1.15] tracking-[0.0125em]'>Creating a Better World of Recruiting</p>
             <p className='text-center text-[16px] font-light md:text-xl lg:text-xl 2xl:text-2xl  tracking-[0.0125em] leading-snug'>A white-glove recruitment experience for both you and your applicants</p>
           </div>
           <div className="grid gap-4 md:justify-center md:grid-cols-2">
