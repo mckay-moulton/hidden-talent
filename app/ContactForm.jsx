@@ -107,6 +107,7 @@ export default function ContactForm({ id }) {
             <option value="black">Black Diamond</option>
             <option value="sapphire">Sapphire</option>
             <option value="emerald">Emerald</option>
+            <option value="service">A La Carte Service</option>
             <option value="opportunities">Keep me in mind for job opportunities</option>
           </select>
         </div>
@@ -116,7 +117,8 @@ export default function ContactForm({ id }) {
         <input 
           id="heardAbout"
           name="heardAbout"
-          placeholder="Search Engine (Google, Bing, etc.)"
+          placeholder="(Google, LinkedIn, Facebook, Instagram, Referral)"
+          required={true}
         />
       </div>
       <div className="flex flex-col gap-1">

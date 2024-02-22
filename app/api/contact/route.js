@@ -89,6 +89,7 @@ export async function POST(request) {
     if (service === 'black') return 'Black Diamond'
     if (service === 'sapphire') return 'Sapphire'
     if (service === 'emerald') return 'Emerald'
+    if (service === 'service') return 'A La Carte'
 
     return 'Keep me in mind for job opportunities'
   }
