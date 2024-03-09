@@ -4,6 +4,8 @@ import Nav from './Nav'
 import './globals.css'
 import { Prompt, Oxygen } from 'next/font/google'
 
+import ReactGA from "react-ga4";
+
 const oxygen = Oxygen({ subsets: ['latin'], weight: ['300', '400', '700'] })
 
 export const metadata = {
@@ -13,6 +15,8 @@ export const metadata = {
 }
 
 export default function RootLayout({ children }) {
+  ReactGA.initialize('G-2YFD4T7JWD')
+
   return (
     <html lang="en" className={oxygen.className}>
       <head>
@@ -26,6 +30,7 @@ export default function RootLayout({ children }) {
         <Nav />
         {children}
         <Footer />
+        
       </body>
     </html>
   )
