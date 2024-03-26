@@ -1,10 +1,9 @@
 import BackToTop from './BackToTop'
 import Footer from './Footer'
+import GoogleAnalytics from './GoogleAnalytics'
 import Nav from './Nav'
 import './globals.css'
 import { Prompt, Oxygen } from 'next/font/google'
-
-import ReactGA from "react-ga4";
 
 const oxygen = Oxygen({ subsets: ['latin'], weight: ['300', '400', '700'] })
 
@@ -15,7 +14,6 @@ export const metadata = {
 }
 
 export default function RootLayout({ children }) {
-  ReactGA.initialize('G-2YFD4T7JWD')
 
   return (
     <html lang="en" className={oxygen.className}>
@@ -30,7 +28,7 @@ export default function RootLayout({ children }) {
         <Nav />
         {children}
         <Footer />
-        
+        <GoogleAnalytics />
       </body>
     </html>
   )
