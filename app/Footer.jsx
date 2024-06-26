@@ -39,8 +39,8 @@ export default function Footer() {
           />
         </Link>
       </div>
-      <p>&copy; 2023 Hidden Talent</p>
-      <p>Created by <Link href="https://www.varial.dev" className="text-hidden-teal-dark" target="_blank">Varial Web Development</Link></p>
+      <p>&copy; 2024 Hidden Talent</p>
+      {/* <p>Created by <Link href="https://www.varial.dev" className="text-hidden-teal-dark" target="_blank">Varial Web Development</Link></p> */}
     </footer>
   )
 }
