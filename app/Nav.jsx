@@ -101,7 +101,7 @@ export default function Nav() {
               For Job Seekers
             </NavLink>
             <NavLink onClick={() => setOpen(false)} href="/listings">
-              Listings
+              Job Listings
             </NavLink>
             <NavLink onClick={() => setOpen(false)} href="/talent-pool">
               Talent Pool
@@ -124,7 +124,7 @@ export default function Nav() {
           <NavLink href="/about">Who We Are</NavLink>
           <NavLink href="/employers">For Employers</NavLink>
           <NavLink href="/job-seekers">For Job Seekers</NavLink>
-          <NavLink href="/listings">Listings</NavLink>
+          <NavLink href="/listings">Job Listings</NavLink>
           <NavLink href="/talent-pool">Talent Pool</NavLink> {/* New Link */}
           <NavLink href="/contact">Contact</NavLink>
           <Link

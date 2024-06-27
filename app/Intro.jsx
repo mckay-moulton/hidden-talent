@@ -184,7 +184,7 @@ export default function IntroSection() {
             </div>
             <div className='grid gap-4 items-center lg:h-full justify-items-center'>
               <img src="office-buildings.svg" alt="" width="115" />
-              <p className="self-end"><span className='block text-hidden-teal text-3xl font-bold'>16</span> <span className='block'>industries</span> served</p>
+              <p className="self-end"><span className='block text-hidden-teal text-3xl font-bold'>5</span> <span className='block'>industries</span> served</p>
             </div>
             <div className='grid gap-4 items-center lg:h-full justify-items-center'>
               <img src="networking.svg" alt="" width="115" />
