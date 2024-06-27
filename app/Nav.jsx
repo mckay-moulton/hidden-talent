@@ -4,41 +4,45 @@ import { useEffect, useState } from "react";
 
 import Image from "next/image";
 import Link from "next/link";
-import { usePathname } from 'next/navigation'
+import { usePathname } from "next/navigation";
 
 export default function Nav() {
-  const [open, setOpen] = useState(false)
-  const [scrollY, setScrollY] = useState(0)
-  const [scrollingUp, setScrollingUp] = useState(true)
+  const [open, setOpen] = useState(false);
+  const [scrollY, setScrollY] = useState(0);
+  const [scrollingUp, setScrollingUp] = useState(true);
 
   useEffect(() => {
-    setScrollY(window.scrollY)
+    setScrollY(window.scrollY);
 
-    const navbar = document.querySelector('#navbar')
+    const navbar = document.querySelector("#navbar");
 
-    document.addEventListener('scroll', event => {
-      if (window.scrollY === 0) {
-        navbar.style.display = 'static'
-        navbar.style.boxShadow = "0 0 0 0 #0a0a0a33"
-        return
-      }
-
-      if (Math.abs(window.scrollY - scrollY) > 1) {
-        if (window.scrollY < scrollY) {
-          navbar.style.position = "sticky"
-          navbar.style.boxShadow = "0 1px 2px 0 #0a0a0a33"
-          setScrollingUp(true)
-        } else {
-          navbar.style.position = "static"
-          navbar.style.boxShadow = "0 0 0 0 #0a0a0a33"
-          setOpen(false)
-          setScrollingUp(false)
+    document.addEventListener(
+      "scroll",
+      (event) => {
+        if (window.scrollY === 0) {
+          navbar.style.display = "static";
+          navbar.style.boxShadow = "0 0 0 0 #0a0a0a33";
+          return;
         }
-        
-        setScrollY(window.scrollY)
-      }
-    }, { passive: true })
-  }, [scrollY])
+
+        if (Math.abs(window.scrollY - scrollY) > 1) {
+          if (window.scrollY < scrollY) {
+            navbar.style.position = "sticky";
+            navbar.style.boxShadow = "0 1px 2px 0 #0a0a0a33";
+            setScrollingUp(true);
+          } else {
+            navbar.style.position = "static";
+            navbar.style.boxShadow = "0 0 0 0 #0a0a0a33";
+            setOpen(false);
+            setScrollingUp(false);
+          }
+
+          setScrollY(window.scrollY);
+        }
+      },
+      { passive: true }
+    );
+  }, [scrollY]);
 
   return (
     <>
@@ -47,7 +51,10 @@ export default function Nav() {
           <img src="telephone.svg" alt="" width="24" className="invert" /> (208) 994-1830
         </Link>
       )} */}
-      <nav id="navbar" className="w-full max-w-[100vw] sticky px-4 py-8 md:px-8 md:py-12 lg:px-16 lg:py-6 flex justify-between items-center bg-white font-['Prompt'] tracking-[0.0125em] top-0 left-0 z-[100]">
+      <nav
+        id="navbar"
+        className="w-full max-w-[100vw] sticky px-4 py-8 md:px-8 md:py-12 lg:px-16 lg:py-6 flex justify-between items-center bg-white font-['Prompt'] tracking-[0.0125em] top-0 left-0 z-[100]"
+      >
         <Link href="/">
           <img
             src="/hidden-talent-logo-full-width.png"
@@ -64,7 +71,7 @@ export default function Nav() {
           />
         </Link>
         <button onClick={() => setOpen(!open)} className="lg:hidden">
-          <Image 
+          <Image
             src="/icon_hamburger.svg"
             width="36"
             height="24"
@@ -74,21 +81,41 @@ export default function Nav() {
         </button>
         {open && (
           <div className="lg:hidden absolute bg-white w-4/5 shadow h-screen left-0 top-0 px-4 py-8 flex flex-col gap-8 font-semibold text-xl z-10">
-            <Link onClick={() => setOpen(false) } href="/">
+            <Link onClick={() => setOpen(false)} href="/">
               <img
                 src="/hidden-talent-logo-full-width.png"
                 width="180"
                 alt="Home"
               />
             </Link>
-            <NavLink onClick={() => setOpen(false) } href="/">Home</NavLink>
-            <NavLink onClick={() => setOpen(false) } href="/about">Who We Are</NavLink>
-            <NavLink onClick={() => setOpen(false) } href="/employers">For Employers</NavLink>
-            <NavLink onClick={() => setOpen(false) } href="/job-seekers">For Job Seekers</NavLink>
-            <NavLink onClick={() => setOpen(false) } href="/listings">Listings</NavLink>
-            <NavLink onClick={() => setOpen(false) } href="/contact">Contact</NavLink>
-            <Link href="tel:(208) 994-1830" className="flex gap-2 bg-hidden-teal p-2.5 px-8 rounded-full text-white justify-center w-fit">
-              <img src="telephone.svg" alt="" width="28" className="invert" /> (208) 994-1830
+            <NavLink onClick={() => setOpen(false)} href="/">
+              Home
+            </NavLink>
+            <NavLink onClick={() => setOpen(false)} href="/about">
+              Who We Are
+            </NavLink>
+            <NavLink onClick={() => setOpen(false)} href="/employers">
+              For Employers
+            </NavLink>
+            <NavLink onClick={() => setOpen(false)} href="/job-seekers">
+              For Job Seekers
+            </NavLink>
+            <NavLink onClick={() => setOpen(false)} href="/listings">
+              Listings
+            </NavLink>
+            <NavLink onClick={() => setOpen(false)} href="/talent-pool">
+              Talent Pool
+            </NavLink>{" "}
+            {/* New Link */}
+            <NavLink onClick={() => setOpen(false)} href="/contact">
+              Contact
+            </NavLink>
+            <Link
+              href="tel:(208) 994-1830"
+              className="flex gap-2 bg-hidden-teal p-2.5 px-8 rounded-full text-white justify-center w-fit"
+            >
+              <img src="telephone.svg" alt="" width="28" className="invert" />{" "}
+              (208) 994-1830
             </Link>
           </div>
         )}
@@ -98,30 +125,35 @@ export default function Nav() {
           <NavLink href="/employers">For Employers</NavLink>
           <NavLink href="/job-seekers">For Job Seekers</NavLink>
           <NavLink href="/listings">Listings</NavLink>
+          <NavLink href="/talent-pool">Talent Pool</NavLink> {/* New Link */}
           <NavLink href="/contact">Contact</NavLink>
-          <Link href="tel:(208) 994-1830" className="flex gap-2 bg-hidden-teal p-3 px-8 rounded-full text-white text-base justify-center w-fit items-center text-center">
-              <img src="telephone.svg" alt="" width="24" className="invert" /> (208) 994-1830
+          <Link
+            href="tel:(208) 994-1830"
+            className="flex gap-2 bg-hidden-teal p-3 px-8 rounded-full text-white text-base justify-center w-fit items-center text-center"
+          >
+            <img src="telephone.svg" alt="" width="24" className="invert" />{" "}
+            (208) 994-1830
           </Link>
         </div>
       </nav>
     </>
-  )
+  );
 }
 
-function NavLink({ href = '/', children, ...props }) {
-  const pathname = usePathname()
+function NavLink({ href = "/", children, ...props }) {
+  const pathname = usePathname();
   return (
-    <Link 
+    <Link
       href={href}
       style={{
-        textDecoration: pathname.endsWith(href) ? 'underline 2px #07A6A2' : '',
-        textUnderlineOffset: '4px',
-        color: pathname.endsWith(href) ? '#07A6A2' : ''
+        textDecoration: pathname.endsWith(href) ? "underline 2px #07A6A2" : "",
+        textUnderlineOffset: "4px",
+        color: pathname.endsWith(href) ? "#07A6A2" : "",
       }}
       className="underline decoration-2 decoration-transparent hover:decoration-hidden-teal"
       {...props}
     >
       {children}
     </Link>
-  )
+  );
 }
