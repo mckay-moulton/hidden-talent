@@ -88,17 +88,14 @@ export default function Nav() {
                 alt="Home"
               />
             </Link>
-            <NavLink onClick={() => setOpen(false)} href="/">
+            {/* <NavLink onClick={() => setOpen(false)} href="/">
               Home
-            </NavLink>
-            <NavLink onClick={() => setOpen(false)} href="/about">
-              Who We Are
-            </NavLink>
+            </NavLink> */}
             <NavLink onClick={() => setOpen(false)} href="/employers">
-              For Employers
+              Employers
             </NavLink>
             <NavLink onClick={() => setOpen(false)} href="/job-seekers">
-              For Job Seekers
+              Job Seekers
             </NavLink>
             <NavLink onClick={() => setOpen(false)} href="/listings">
               Job Listings
@@ -107,6 +104,9 @@ export default function Nav() {
               Talent Pool
             </NavLink>{" "}
             {/* New Link */}
+            <NavLink onClick={() => setOpen(false)} href="/about">
+              About
+            </NavLink>
             <NavLink onClick={() => setOpen(false)} href="/contact">
               Contact
             </NavLink>
@@ -120,18 +120,27 @@ export default function Nav() {
           </div>
         )}
         <div className="hidden lg:flex font-semibold lg:gap-6 2xl:gap-12 items-center text-xl">
-          <NavLink href="/">Home</NavLink>
-          <NavLink href="/about">Who We Are</NavLink>
-          <NavLink href="/employers">For Employers</NavLink>
-          <NavLink href="/job-seekers">For Job Seekers</NavLink>
+          {/* <NavLink href="/">Home</NavLink> */}
+          <NavLink href="/employers">Employers</NavLink>
+          <NavLink href="/job-seekers">Job Seekers</NavLink>
           <NavLink href="/listings">Job Listings</NavLink>
           <NavLink href="/talent-pool">Talent Pool</NavLink> {/* New Link */}
+          <NavLink href="/about">About</NavLink>
           <NavLink href="/contact">Contact</NavLink>
+          
+          {/* Origional button size if it needs reverted */}
+          {/* className="flex gap-2 bg-hidden-teal p-3 px-8 rounded-full text-white text-base justify-center w-fit items-center text-center" */}
           <Link
             href="tel:(208) 994-1830"
-            className="flex gap-2 bg-hidden-teal p-3 px-8 rounded-full text-white text-base justify-center w-fit items-center text-center"
+            className="flex gap-2 bg-hidden-teal p-3 px-4 rounded-full text-white text-base justify-center w-fit items-center text-center"
           >
-            <img src="telephone.svg" alt="" width="24" className="invert" />{" "}
+            {/* <img src="telephone.svg" alt="phone number" width="24" className="invert" />{" "} */}
+            <img
+              src="telephone.svg"
+              alt="phone icon"
+              width="20"
+              className="invert"
+            />{" "}
             (208) 994-1830
           </Link>
         </div>

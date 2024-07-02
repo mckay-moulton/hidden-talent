@@ -51,10 +51,11 @@ export default async function JobListingsPage() {
         <iframe
           style={{
             height: "900px",
-            width: "900px",
+            // width: "900px",
+            width: "1200px",
             maxWidth: "90%",
             maxHeight: "90%",
-            border: "none",
+            border: "1px solid black",
           }}
           src="https://recruitcrm.io/jobs/Hidden_Talent"
         ></iframe>
