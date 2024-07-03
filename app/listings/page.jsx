@@ -47,7 +47,7 @@ export default async function JobListingsPage() {
         <H1 />
         <Description />
       </div>
-      <div className="flex justify-center">
+      {/* <div className="flex justify-center"> */}
         <iframe
           style={{
             height: "900px",
@@ -58,7 +58,7 @@ export default async function JobListingsPage() {
           }}
           src="https://recruitcrm.io/jobs/Hidden_Talent"
         ></iframe>
-      </div>
+      {/* </div> */}
       <div className="flex flex-col lg:flex-row gap-8 flex-wrap justify-center items-center w-full max-w-[1600px]">
         {listings?.map((listing) => (
           <Card key={listing._id} listing={listing} />
