@@ -35,14 +35,14 @@ const TalentPool = () => {
         padding: "0 15px",
       }}
     >
-      <div style={{ width: "100%", display: "flex", justifyContent: "center" }}>
+      {/* <div style={{ width: "100%", display: "flex", justifyContent: "center" }}>
         <img
           src="/Lets_Connect_Wide.png"
-          alt="Logo"
+          alt="Lets Connect"
           style={{ width: "100%", maxWidth: "1400px" }}
         />
         <br /><br /><br />
-      </div>
+      </div> */}
       <div style={{ width: "100%", display: "flex", justifyContent: "center" }}>
         <iframe
           style={{
