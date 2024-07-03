@@ -8,7 +8,7 @@ const TalentPool = () => {
       <iframe
         style={{
           height: "900px",
-          width: "1200px",
+          width: "1400px",
           maxWidth: "90%",
           maxHeight: "90%",
           // border: "none",

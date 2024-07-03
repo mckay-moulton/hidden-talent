@@ -42,17 +42,16 @@ export default async function JobListingsPage() {
   const listings = await getJobListings();
 
   return (
-    <main className="px-4 py-8 md:py-12 lg:py-16 flex flex-col gap-8 items-center w-screen max-w-[100vw] overflow-x-clip">
-      <div className="flex flex-col gap-2">
+    <main className="px-4 py-8 md:py-12 lg:py-16 flex flex-col gap-8 items-center w-screen max-w-[100vw] overflow-x-clip justify-center">
+      <div className="flex flex-col gap-2 items-center">
         <H1 />
         <Description />
       </div>
-      <div>
+      <div className="flex justify-center">
         <iframe
           style={{
             height: "900px",
-            // width: "900px",
-            width: "1200px",
+            width: "1400px",
             maxWidth: "90%",
             maxHeight: "90%",
             border: "1px solid black",
