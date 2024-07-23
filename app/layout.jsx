@@ -27,7 +27,10 @@ export default function RootLayout({ children }) {
     <html lang="en" className={oxygen.className}>
       <head>
         {/* <link rel="icon" href="/hidden-talent-icon.svg" /> */}
-        <link rel="icon" href="/favicon.ico" />
+        <link
+          rel="icon"
+          href="https://hidden-talent-images.s3.amazonaws.com/logos/favicon.ico"
+        />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"

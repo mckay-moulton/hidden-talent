@@ -160,59 +160,60 @@ export default function IntroSection() {
           </span>
         </h1>
 
-        {/* <!-- New Banner Section --> */}
-        <div className="flex items-center justify-center bg-[#07A6A2] py-8 w-full">
-          <div className="flex justify-between w-full max-w-4xl px-8">
-            <div className="flex flex-col items-center">
-              <span className="mb-2 text-2xl">
-                <b>ECDVC</b>
-              </span>
-              <a
-                href="https://www.ecdvc.org"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src="https://hidden-talent-images.s3.amazonaws.com/logos/ECDVC_black+(2).png"
-                  alt="ECDVC Logo"
-                  className="h-16"
-                />
-              </a>
-            </div>
-            <div className="flex flex-col items-center">
-              <span className="mb-3 text-2xl">
-                <b>Stack Construction</b>
-              </span>
-              <a
-                href="https://stackconstruction.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src="https://hidden-talent-images.s3.amazonaws.com/logos/Stack_New.png"
-                  alt="Stack Logo"
-                  className="h-16"
-                />
-              </a>
-            </div>
-            <div className="flex flex-col items-center">
-              <span className="mb-3 text-2xl">
-                <b>KIT</b>
-              </span>
-              <a
-                href="https://www.kitwest.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src="https://hidden-talent-images.s3.amazonaws.com/logos/KIT_new.png"
-                  alt="KIT Logo"
-                  className="h-16"
-                />
-              </a>
-            </div>
-          </div>
-        </div>
+{/* <!-- New Banner Section --> */}
+<div className="flex items-center justify-center bg-[#07A6A2] py-8 w-full">
+  <div className="flex flex-col md:flex-row justify-between w-full max-w-4xl px-8">
+    <div className="flex flex-col items-center mb-8 md:mb-0">
+      <span className="mb-2 text-2xl">
+        <b>ECDVC</b>
+      </span>
+      <a
+        href="https://www.ecdvc.org"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          src="https://hidden-talent-images.s3.amazonaws.com/logos/ECDVC_black+(2).png"
+          alt="ECDVC Logo"
+          className="h-16"
+        />
+      </a>
+    </div>
+    <div className="flex flex-col items-center mb-8 md:mb-0">
+      <span className="mb-3 text-2xl">
+        <b>Stack Construction</b>
+      </span>
+      <a
+        href="https://stackconstruction.com"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          src="https://hidden-talent-images.s3.amazonaws.com/logos/Stack_New.png"
+          alt="Stack Logo"
+          className="h-16"
+        />
+      </a>
+    </div>
+    <div className="flex flex-col items-center mb-8 md:mb-0">
+      <span className="mb-3 text-2xl">
+        <b>KIT</b>
+      </span>
+      <a
+        href="https://www.kitwest.com"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          src="https://hidden-talent-images.s3.amazonaws.com/logos/KIT_new.png"
+          alt="KIT Logo"
+          className="h-16"
+        />
+      </a>
+    </div>
+  </div>
+</div>
+
 
         {/* <div className='flex flex-col gap-8 lg:gap-24 lg:flex-row max-w-[1280px]'>
           <div 
