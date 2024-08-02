@@ -161,7 +161,7 @@ export default function IntroSection() {
         </h1>
 
         {/* <!-- New Banner Section --> */}
-        <div className="flex items-center justify-center bg-[#07A6A2] py-8 w-full">
+        <div className="flex items-center justify-center bg-[#07A6A2] py-8 w-full rounded-lg">
           <div className="flex flex-col md:flex-row justify-between w-full max-w-4xl px-4">
             <div className="flex flex-col items-center mb-8 md:mb-0 mx-2">
               <span className="mb-2 text-xl">
