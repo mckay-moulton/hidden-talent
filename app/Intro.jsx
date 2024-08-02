@@ -162,8 +162,8 @@ export default function IntroSection() {
 
         {/* <!-- New Banner Section --> */}
         <div className="flex items-center justify-center bg-[#07A6A2] py-8 w-full rounded-lg">
-          <div className="flex flex-col md:flex-row justify-between w-full max-w-4xl px-4">
-            <div className="flex flex-col items-center mb-8 md:mb-0 mx-2">
+          <div className="flex flex-col md:flex-row justify-between w-full max-w-8xl px-4">
+            <div className="flex flex-col items-center mb-8 md:mb-0 mx-6">
               <span className="mb-2 text-xl">
                 <b>ECDVC</b>
               </span>
@@ -179,7 +179,7 @@ export default function IntroSection() {
                 />
               </a>
             </div>
-            <div className="flex flex-col items-center mb-8 md:mb-0 mx-2">
+            <div className="flex flex-col items-center mb-8 md:mb-0 mx-6">
               <span className="mb-3 text-xl">
                 <b>Stack Construction</b>
               </span>
@@ -195,7 +195,7 @@ export default function IntroSection() {
                 />
               </a>
             </div>
-            <div className="flex flex-col items-center mb-8 md:mb-0 mx-2">
+            <div className="flex flex-col items-center mb-8 md:mb-0 mx-6">
               <span className="mb-3 text-xl">
                 <b>KIT</b>
               </span>
@@ -211,7 +211,7 @@ export default function IntroSection() {
                 />
               </a>
             </div>
-            <div className="flex flex-col items-center mb-8 md:mb-0 mx-2">
+            <div className="flex flex-col items-center mb-8 md:mb-0 mx-6">
               <span className="mb-3 text-xl">
                 <b>Elmore County</b>
               </span>
@@ -227,7 +227,7 @@ export default function IntroSection() {
                 />
               </a>
             </div>
-            <div className="flex flex-col items-center mb-8 md:mb-0 mx-2">
+            <div className="flex flex-col items-center mb-8 md:mb-0 mx-6">
               <span className="mb-3 text-xl">
                 <b>Agnew Beck</b>
               </span>
