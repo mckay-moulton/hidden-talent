@@ -161,136 +161,139 @@ export default function IntroSection() {
         </h1>
 
         {/* <!-- New Banner Section --> */}
-<div className="flex items-center justify-center bg-[#07A6A2] py-8 w-full rounded-lg">
-  <div className="grid grid-cols-2 md:grid-cols-4 gap-4 w-full max-w-8xl px-4">
-    <div className="flex flex-col items-center mb-8 md:mb-0">
-      <span className="mb-2 text-xl text-center">
-        <b>ECDVC</b>
-      </span>
-      <a
-        href="https://www.ecdvc.org"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <img
-          src="https://hidden-talent-images.s3.amazonaws.com/logos/ECDVC_black+(2).png"
-          alt="ECDVC Logo"
-          className="h-16"
-        />
-      </a>
-    </div>
-    <div className="flex flex-col items-center mb-8 md:mb-0">
-      <span className="mb-2 text-xl text-center">
-        <b>Stack Construction</b>
-      </span>
-      <a
-        href="https://stackconstruction.com"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <img
-          src="https://hidden-talent-images.s3.amazonaws.com/logos/Stack_New.png"
-          alt="Stack Logo"
-          className="h-16"
-        />
-      </a>
-    </div>
-    <div className="flex flex-col items-center mb-8 md:mb-0">
-      <span className="mb-2 text-xl text-center">
-        <b>KIT</b>
-      </span>
-      <a
-        href="https://www.kitwest.com"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <img
-          src="https://hidden-talent-images.s3.amazonaws.com/logos/KIT_new.png"
-          alt="KIT Logo"
-          className="h-16"
-        />
-      </a>
-    </div>
-    <div className="flex flex-col items-center mb-8 md:mb-0">
-      <span className="mb-2 text-xl text-center">
-        <b>Elmore County</b>
-      </span>
-      <a
-        href="https://elmorecounty.org/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <img
-          src="https://hidden-talent-images.s3.amazonaws.com/logos/elmore.jpeg"
-          alt="Elmore County Logo"
-          className="h-16"
-        />
-      </a>
-    </div>
-    <div className="flex flex-col items-center mb-8 md:mb-0">
-      <span className="mb-2 text-xl text-center">
-        <b>Agnew Beck</b>
-      </span>
-      <a
-        href="https://agnewbeck.com/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <img
-          src="https://hidden-talent-images.s3.amazonaws.com/logos/AB_LOGO.jpg"
-          alt="Agnew Beck Logo"
-          className="h-16"
-        />
-      </a>
-    </div>
-    <div className="flex flex-col items-center mb-8 md:mb-0">
-      <span className="mb-2 text-xl text-center">
-        <b>Renewed Cleaning</b>
-      </span>
-      <a
-        href="https://www.renewedcleaningservice.net/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <img
-          src="https://hidden-talent-images.s3.amazonaws.com/logos/Renewed_Cleaning_Logo.png"
-          alt="Renewed Cleaning of Idaho Logo"
-          className="h-16"
-        />
-      </a>
-    </div>
-    <div className="flex flex-col items-center mb-8 md:mb-0">
-      <span className="mb-2 text-xl text-center">
-        <b>Teton County</b>
-      </span>
-      <a
-        href="https://www.tetoncountyidaho.gov/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <img
-          src="https://hidden-talent-images.s3.amazonaws.com/logos/Teton_County_Logo.png"
-          alt="Teton County Logo"
-          className="h-16"
-        />
-      </a>
-    </div>
-    {/* Placeholder for the 8th logo */}
-    <div className="flex flex-col items-center mb-8 md:mb-0 hidden">
-      <span className="mb-2 text-xl text-center">
-        <b>Placeholder</b>
-      </span>
-      <a href="#" target="_blank" rel="noopener noreferrer">
-        <img
-          src="https://via.placeholder.com/150"
-          alt="Placeholder Logo"
-          className="h-16"
-        />
-      </a>
-    </div>
-  </div>
-</div>
-
+        <div className="flex items-center justify-center bg-[#07A6A2] py-8 w-full rounded-lg">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 w-full max-w-8xl px-4">
+            <div className="flex flex-col items-center mb-8 md:mb-0">
+              <span className="mb-2 text-xl text-center">
+                <b>ECDVC</b>
+              </span>
+              <a
+                href="https://www.ecdvc.org"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="https://hidden-talent-images.s3.amazonaws.com/logos/ECDVC_black+(2).png"
+                  alt="ECDVC Logo"
+                  className="h-16"
+                />
+              </a>
+            </div>
+            <div className="flex flex-col items-center mb-8 md:mb-0">
+              <span className="mb-2 text-xl text-center">
+                <b>Stack Construction</b>
+              </span>
+              <a
+                href="https://stackconstruction.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="https://hidden-talent-images.s3.amazonaws.com/logos/Stack_New.png"
+                  alt="Stack Logo"
+                  className="h-16"
+                />
+              </a>
+            </div>
+            <div className="flex flex-col items-center mb-8 md:mb-0">
+              <span className="mb-2 text-xl text-center">
+                <b>KIT</b>
+              </span>
+              <a
+                href="https://www.kitwest.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="https://hidden-talent-images.s3.amazonaws.com/logos/KIT_new.png"
+                  alt="KIT Logo"
+                  className="h-16"
+                />
+              </a>
+            </div>
+            <div className="flex flex-col items-center mb-8 md:mb-0">
+              <span className="mb-2 text-xl text-center">
+                <b>Elmore County</b>
+              </span>
+              <a
+                href="https://elmorecounty.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="https://hidden-talent-images.s3.amazonaws.com/logos/elmore.jpeg"
+                  alt="Elmore County Logo"
+                  className="h-16"
+                />
+              </a>
+            </div>
+            <div className="flex flex-col items-center mb-8 md:mb-0">
+              <span className="mb-2 text-xl text-center">
+                <b>Agnew Beck</b>
+              </span>
+              <a
+                href="https://agnewbeck.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="https://hidden-talent-images.s3.amazonaws.com/logos/AB_LOGO.jpg"
+                  alt="Agnew Beck Logo"
+                  className="h-16"
+                />
+              </a>
+            </div>
+            <div className="flex flex-col items-center mb-8 md:mb-0">
+              <span className="mb-2 text-xl text-center">
+                <b>Renewed Cleaning</b>
+              </span>
+              <a
+                href="https://www.renewedcleaningservice.net/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="https://hidden-talent-images.s3.amazonaws.com/logos/Renewed_Cleaning_Logo.png"
+                  alt="Renewed Cleaning of Idaho Logo"
+                  className="h-16"
+                />
+              </a>
+            </div>
+            <div className="flex flex-col items-center mb-8 md:mb-0">
+              <span className="mb-2 text-xl text-center">
+                <b>Teton County</b>
+              </span>
+              <a
+                href="https://www.tetoncountyidaho.gov/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="https://hidden-talent-images.s3.amazonaws.com/logos/Teton_County_Logo.png"
+                  alt="Teton County Logo"
+                  className="h-16"
+                />
+              </a>
+            </div>
+            {/* Placeholder for the 8th logo */}
+            <div className="flex flex-col items-center mb-8 md:mb-0">
+              <span className="mb-2 text-xl text-center">
+                <b>Parker Insurance</b>
+              </span>
+              <a
+                href="https://www.myidahohealth.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="https://hidden-talent-images.s3.amazonaws.com/logos/Parker_Insurance.png"
+                  alt="Placeholder Logo"
+                  className="h-16"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
 
         {/* <div className='flex flex-col gap-8 lg:gap-24 lg:flex-row max-w-[1280px]'>
           <div 
